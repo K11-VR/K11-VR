@@ -1582,6 +1582,12 @@ var watch3D = function () {
                 }
         },
 		{
+		        key: "toq",
+		        value: function toq() {
+		              window.location.href ="./que.html";
+		        }
+		},
+		{
 		        key: "show",
 		        value: function show() {
 		                 document.getElementById("r1").style.display = "block";

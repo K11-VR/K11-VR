@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="description" content="不超过150个字符" />
+		<meta name="keywords" content="" />
+		<meta content="" name="author" />
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<title>K11艺术空间</title>
+		
+	</head>
+	<style type="text/css">
+		 body,html{
+		     margin: 0;
+		     padding: 0;
+		     overflow: hidden;
+		     padding-top: 5rem;
+		     font-family: sans-serif;
+		}
+		 .bg{
+		     position: fixed;
+		     width: 100%;
+		     height: 100%;
+		     top: 0;
+		     left: 0;
+		     z-index: -1;
+		}
+		 .back{
+		     position: fixed;
+		     left: 1.25rem;
+		     top: 1.25rem;
+		}
+		 .backi{
+		     width: 5rem;
+		}
+		 a{
+		     -webkit-tap-highlight-color:rgba(255,0,0,0);
+		}
+		 .sub{
+		     width: 80%;
+		     text-align: center;
+		     position: fixed;
+		     top: 80%;
+		     left: 10%;
+		     z-index: 10000;
+		     display: none;
+		     opacity: 0;
+		}
+		 .sub1{
+		     width: 100%;
+		}
+		 .next{
+		     width: 100%;
+		     display: none;
+		}
+		 .ball1{
+		     bottom: 20%;
+		     padding-left: 25%;
+		     position: fixed;
+		     width: 100%;
+		     text-align: center;
+		     z-index: 100;
+		     opacity: 0;
+			 display: none;
+		}
+		 .ball2{
+		     top: 18%;
+		     padding-left: 7%;
+		     position: fixed;
+		     width: 100%;
+		     text-align: left;
+		     z-index: 10;
+		     opacity: 0;
+		}
+		 .ans{
+		     position: fixed;
+		     width: 100%;
+		     text-align: center;
+		     z-index: 50;
+		     top: 22%;
+		     opacity: 0;
+			 display: none;
+		}
+		 .b1i{
+		     width: 38%;
+		}
+		 .b2i{
+		     width: 30%;
+		}
+		 .ani{
+		     width: 70%;
+		}
+		 .open{
+		     position: fixed;
+		     z-index: 20000;
+		     height: 15%;
+		     width: 70%;
+		     left:13%;
+		     padding-left: 5%;
+		     display: flex;
+		     justify-content: center;
+		     align-items: center;
+		     flex-direction: column;
+		     background: rgba(0,0,0,0.7);
+		     overflow: hidden;
+		     font-family: sans-serif;
+		     font-weight: bold;
+		     top:40% 
+		}
+		 .words {
+		     color: rgba(0,0,0,0);
+		     font-size: 0;
+		     line-height:0.4;
+		}
+		 .words span {
+		     font-size: 1.6rem;
+		     display: inline-block;
+		     animation: move 2s ease-in-out infinite;
+		}
+		 .words span:nth-child(2) {
+		     animation-delay: 0.4s;
+		}
+		 .words span:nth-child(3) {
+		     animation-delay: 0.6s;
+		}
+		 .words span:nth-child(4) {
+		     animation-delay: 0.8s;
+		}
+		 span{
+		     padding-right: 0.625rem;
+		}
+		 @keyframes move {
+		     0% {
+		         transform: translate(-25%, 0);
+		    }
+		     50% {
+		         text-shadow: 0 0.46875rem 2.5rem rgba(255,255,255, 0.6);
+		         color: rgba(255,255,255,1);
+		    }
+		     100% {
+		         transform: translate(33%, 0);
+		    }
+		}
+		 .tt{
+		     position: absolute;
+		     width: 100%;
+		     text-align: center;
+		     top: 15%;
+		}
+		 .tti{
+		     width: 55%;
+		}
+		 .sbtn{
+		     position: fixed;
+		     text-align: center;
+		     top: 55%;
+		     z-index: 3000;
+		}
+		 .sbtni{
+		     width: 90%;
+		}
+		 .que{
+		     width: 90%;
+			 height: 80%;
+		     margin: auto;
+			 margin-top: -5rem;
+		     text-align: center;
+		     color: white;
+		     opacity: 0;
+		     background-color: rgba(0,0,0,0.6);
+			 
+		}
+		 .qt{
+		     font-size:0.8rem;
+		     padding: 1rem;
+		}
+		
+		.qti{
+			margin: auto;
+			margin-top: 0.5rem;
+			display: block;
+			height: 6rem;
+		}
+		.ass{
+			 flex-direction: column;
+			 width: 100%;
+			padding-bottom: 1rem;
+		}
+		 .a1{
+			 font-size: 0.8rem;
+		 display: inline-block;
+		 flex-wrap: nowrap;
+		 background-color: white;
+		 border: 1px solid ghostwhite;
+		 width: 30%;
+		 color: black;
+		 }
+		 .a1i{
+			width: 100%; 
+		 }
+		 .as{
+			  border: 1px solid gold;
+			  box-shadow: 0 0 10px 0 #FFD700;
+		 }
+	</style>
+	<body>
+		
+		<div class="sbtn">
+			<img src="sources/sbtn.png" class="sbtni">
+		</div>
+		<div class="tt">
+			<img src="sources/tt.png" class="tti">
+		</div>
+		<div class="open">
+			<div class="words words-1" style="margin-bottom: 30px;">
+			 <span>你</span>
+			 <span>准</span>
+			  <span>备</span>
+			  <span>好</span>
+			</div>
+			<div class="words words-1">
+			  
+			</div>
+			<div class="words words-1">
+				<span>接</span>
+				<span>受</span>
+				<span>挑</span>
+			  <span>战</span>
+			  <span>了</span>
+			  <span>吗</span>
+			  <span>?</span>
+			</div>
+		</div>
+		<img src="sources/qbg.jpg" class="bg">
+		<a class="back" href="index.html" >
+			
+			<img src="sources/back.png" class="backi">
+		</a>
+		<div class="que" class="que">
+		<div class="qt">《Future comes from the past》是韩国艺术家姜錫鉉（Eddie Kang）创作的一组艺术作品，目前收藏于天津K11 select 5层。他的美学思想主要來自卡通人物的视觉风格和種種怀旧的氛围。<br>以下作品同属于姜錫鉉（Eddie Kang）的是?
+<img src="sources/1q.jpg" class="qti">
+	
+
+</div>
+<div class="ass">
+	<div class="a1" id="a1">
+					<img src="sources/2q.jpg" class="a1i">
+					<div>A</div>
+					<div>My Universe Serues</div>
+				</div>
+				<div class="a1" id="a2">
+					<img src="sources/3q.jpg" class="a1i">
+					<div>B</div>
+					<div>Untitled Kimpsons#2</div>
+				</div>
+				<div class="a1"  id="a3">
+					<img src="sources/4q.jpg" class="a1i">
+					<div>C</div>
+					<div>Campbell's Soup Can</div>
+					
+					</div>
+					
+					</div>
+				
+		</div>
+		<div class="sub">
+			<img src="sources/sub.png"  class="sub1">
+			<img src="sources/next.png"  class="next">
+		</div>
+		<div class="ball1">
+			<img src="sources/ball1.png" class="b1i">
+		</div>
+		<div class="ans">
+			<img src="sources/ans.png" class="ani">
+		</div>
+		<div class="ball2">
+			<img src="sources/ball2.png" class="b2i">
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$('.sbtn').click(function() {
+				$('.sbtn').animate({
+					opacity:'0',
+					top:'+=2%'
+				}, 300);
+				$(".sbtn").delay(500).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+					$(this).css('display', 'none');
+					next(); //这里必须加next，否则queue只会执行一次
+				});
+				$('.open').animate({
+					opacity:'0',
+					width:"+=20%",
+					left:"-=5%"
+				}, 300);
+				$(".open").delay(500).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+					$(this).css('display', 'none');
+					next(); //这里必须加next，否则queue只会执行一次
+				});
+				$('.tt').animate({
+					top:'-=5%'
+				}, 300);
+				$('.tti').animate({
+					opacity:'0',
+					width:"+=10%",
+					left:"-=5%"
+				}, 300);
+				$('.bg').animate({
+					width:'+=20%',
+					height:'+=20%',
+					left:'-=10%',
+					top:'-=10%'
+				}, 1000);
+				$('.que').delay(800).animate({
+					opacity:'1'
+				}, 600);
+				$(".sub").delay(500).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+					$(this).css('display', 'block');
+					next(); //这里必须加next，否则queue只会执行一次
+				});
+				$(".sub").delay(600).animate({
+					opacity:'1'
+				}, 300);
+			});
+		
+		$("#a1").click(function(){
+		  $("#a1").addClass("as");
+          $("#a2").removeClass("as");
+		  $("#a3").removeClass("as");
+		});
+		
+		$("#a2").click(function(){
+		  $("#a2").addClass("as");
+		  $("#a1").removeClass("as");
+		  $("#a3").removeClass("as");
+		});
+		
+		$("#a3").click(function(){
+		  $("#a3").addClass("as");
+		  $("#a1").removeClass("as");
+		  $("#a2").removeClass("as");
+		});
+		
+		$('.sub1').click(function() {
+			$('.bg').animate({
+				width:'+=40%',
+				height:'+=40%',
+				left:'-=20%',
+				top:'-=20%'
+			}, 1000);
+			$('.que').animate({
+				opacity:'0'
+			}, 300);
+			$('.sub1').css('display', 'none');
+			$('.next').css('display', 'block');
+			$('.ans').css('display', 'block');
+			$(".ball1").delay(500).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+				$(this).css('display', 'block');
+				next(); //这里必须加next，否则queue只会执行一次
+			});
+			$('.ball1').delay(500).animate({
+				opacity:'1'
+			}, 600);
+			$('.ans').delay(600).animate({
+				opacity:'1'
+			}, 600);
+			$('.ball2').delay(700).animate({
+				opacity:'1'
+			}, 600);
+			$('.b1i').delay(500).animate({
+				width:'-=5%'
+			}, 600);
+			$('.b2i').delay(700).animate({
+				width:'-=3%'
+			}, 600);
+			
+			
+		});
+		$('.next').click(function() {
+		$('.bg').animate({
+			width:'-=40%',
+			height:'-=40%',
+			left:'+=20%',
+			top:'+=20%'
+		}, 1000);
+		$('.que').delay(1000).animate({
+			opacity:'1'
+		}, 300);
+		$('.sub1').css('display', 'block');
+		$('.next').css('display', 'none');
+		
+		$('.ball1').delay(500).animate({
+			opacity:'0'
+		}, 600);
+		$(".ball1").delay(1200).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+			$(this).css('display', 'none');
+			next(); //这里必须加next，否则queue只会执行一次
+		});
+		$('.ans').delay(600).animate({
+			opacity:'0'
+		}, 600);
+		$(".ans").delay(1200).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+			$(this).css('display', 'none');
+			next(); //这里必须加next，否则queue只会执行一次
+		});
+		$('.ball2').delay(700).animate({
+			opacity:'0'
+		}, 600);
+		$('.b1i').delay(500).animate({
+			width:'+=5%'
+		}, 600);
+		$('.b2i').delay(700).animate({
+			width:'+=3%'
+		}, 600);
+		$("#a3").removeClass("as");
+		$("#a1").removeClass("as");
+		$("#a2").removeClass("as");
+		
+	});
+		});
+		
+	</script>
+</html>

@@ -6,6 +6,9 @@
 <title>K11艺术空间</title>
 <link href="dist/watch3D.min.css" type="text/css" rel="stylesheet">
 <style type="text/css">
+	*{
+	 	  -webkit-tap-highlight-color:transparent;
+		}
 .layer{
     position: fixed;
     left: 0px;
@@ -55,15 +58,17 @@ display: none;
 .menu{
 	position: fixed;
 		z-index: 999;
-		bottom:25px;
+		bottom:0px;
 		left: 20px;
 }
 .menum{
 	width: 94%;
 }
+
 </style>
 </head>
 <body>
+
 	<div id="r1" class="r1" onclick="closed()">
 		<img src="sources/r3.png" class="r1m">
 	</div>
@@ -71,7 +76,7 @@ display: none;
 		<img src="sources/logo.png" class="logom">
 	</div>
 	<div class="menu">
-		<img src="sources/menu2.png" class="menum">
+		<img src="sources/menu3.png" class="menum">
 	</div>
 <div class="layer">
     <div class="layer-text">
@@ -94,23 +99,26 @@ let w3d = new watch3D({
     num : 12,
     maxY : 25,
     tips : {
-        0 : {
+       11: {
             styles : {
-                "height" : "100px",
+                "height" : "260px",
                 "width" : "100px",
-                "background-color" : "",
+                "background-color" : "rgba(0,0,0,0)",
                 "text-align" : "center",
-                "margin-right" : "10px",
-                "color" : "",
-                "cursor" : "pointer"
+                "margin-left" : "-140px",
+				 "margin-top" : "-120px",
+                "color" : "black",
+                "cursor" : "pointer",
+				
+				
             },
-            content : " ",
+            content : "",
             callback : function(e){
-                w3d.pause();
-                w3d.changeData({
-                    num : 10,
-                    resource : "sources/4.jpg"
-                },true);
+                w3d.toq();
+                // w3d.changeData({
+                //     num : 10,
+                //     resource : "sources/4.jpg"
+                // },true);
             }
         },
         1 : {
@@ -122,7 +130,7 @@ let w3d = new watch3D({
                 "margin-right" : "10px",
                 "color" : "",
             },
-            content : " ",
+            content : "",
             callback : function(e){
                 w3d.pause();
                 w3d.changeData({
@@ -181,7 +189,7 @@ let w3d = new watch3D({
             }
         }
     },
-    resource : "sources/3d.jpg",
+    resource : "sources/3d6.jpg",
     loadstart : function(){
         layer.style.display = "block";
     },
