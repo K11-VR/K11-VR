@@ -216,21 +216,23 @@ html {
 	transform-origin: 50% 50% 0;
 	-webkit-transform: translate3d(-50%, -50%, -1px) rotateY(180deg);
 	transform: translate3d(-50%, -50%, -1px) rotateY(180deg);
-	display: block
+	display: block;
+	
 }
 
 .watch3D-tip-wrapper {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 100px;
-	height: 50px;
+	/* width: 100px;
+	height: 50px; */
 	border-radius: 10px;
-	padding: 0 5px;
+	padding:5px;
 	/* background: #6cf */
 }
 
 .watch3D-tpl-content {
 	position: relative;
-	margin-top: 20%;
+	    margin-bottom: -0.3rem;
+	/* margin-top: 20%; */
 }
