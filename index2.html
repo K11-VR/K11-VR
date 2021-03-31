@@ -94,20 +94,20 @@
     .logo {
       position: fixed;
       z-index: 999;
-      top: 30px;
-      right: 10px;
+      top: 20px;
+      right: 0px;
       text-align: right;
     }
 
     .logom {
-      width: 90px;
+      width: 100px;
     }
 
     .menu {
       position: fixed;
       z-index: 999;
-      bottom: 100px;
-      left: 3.6rem;
+      bottom: 20px;
+      left: 20px;
     }
 
     .menum {
@@ -134,15 +134,12 @@
     }
 	.btn{
 		position: fixed;
-		z-index: 2000;
-		left:5rem;
-		bottom:8.5rem;
-		opacity: 0;
+		z-index: 999;
+		left: 1.5rem;
+		top:1rem;
 	}
 	.btni{
 		width: 1rem;
-		font-size: 16px;
-		vertical-align: middle;
 	}
 	#play{
 		display: none;
@@ -191,11 +188,9 @@
 <body>
 <div class="btn" id="pause" onclick="pause()">
 		<img src="sources/pause.png" class="btni">
-		<span class="btni">暂停</span>
 	</div>
 	<div class="btn" id="play" onclick="play()">
 		<img src="sources/play.png" class="btni">
-		<span class="btni">播放</span>
 	</div>
   <div id="r1" class="r1" onclick="closed()">
     <img src="sources/r3.png" class="r1m">
@@ -260,20 +255,6 @@
 			top:"-=35%",
 			opacity:"0"
 		  },800);
-		 $('.logo').delay(1200).animate({
-		 	top:"20px",
-			right:'0',
-		 },500);
-		 $('.logom').delay(1200).animate({
-		 	width:'100px'
-		 },500);
-		 $('.menu').delay(1000).animate({
-		 	left:"20px",
-		 	bottom:"20px"
-		 },500);
-		$('.btn').delay(1100).animate({
-			opacity:'1'
-		},500);
 		  $(".lbg").delay(1600).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
 		  	$(this).css('display', 'none');
 		  	next(); //这里必须加next，否则queue只会执行一次

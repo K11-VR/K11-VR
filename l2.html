@@ -92,14 +92,17 @@ a{
 	opacity: 0.5;
 	margin-right: -0.1rem;
 }
-.btn{
+	.btn{
 		position: fixed;
-		z-index: 999;
-		left: 1.5rem;
-		top:1rem;
+		z-index: 2000;
+		left:5rem;
+		bottom:8.5rem;
+		opacity: 0;
 	}
 	.btni{
 		width: 1rem;
+		font-size: 16px;
+		vertical-align: middle;
 	}
 	#play{
 		display: none;
@@ -109,9 +112,11 @@ a{
 <body>
 <div class="btn" id="pause" onclick="pause()">
 		<img src="sources/pause.png" class="btni">
+		<span class="btni">暂停</span>
 	</div>
 	<div class="btn" id="play" onclick="play()">
 		<img src="sources/play.png" class="btni">
+		<span class="btni">播放</span>
 	</div>
 	<div id="r1" class="r1" onclick="closed()">
 		<img src="sources/r3.png" class="r1m">
