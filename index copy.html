@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <link href="dist/watch3D.min.css" type="text/css" rel="stylesheet">
+ <link rel="stylesheet" href="./css/loading.css">
+ <link rel="stylesheet" href="./css/index.css">
+ <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+ <script src="./js/loading.js"></script>
+  <script type="text/javascript" src="dist/watch3D.min.js"></script>
+  <title>K11艺术空间</title>
+
+  <style type="text/css">
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+  .layer{
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+     /* background: #f6f6f6; */
+      z-index: 2999;
+
+	  
+  }
+  .lbg{
+	 position: fixed;
+	  left:-30%;
+	  top: -5%;
+	  width: 150%;
+	  z-index: 3000;
+  }
+  .door{
+  	position: fixed;
+  	 left:2.4rem;
+  	 top: 4.6rem;
+  	 width: 100%;
+  	 z-index: 2000;
+  }
+  .layer-text{
+  	width: 5rem;
+      position: fixed;
+	  z-index: 2999;
+      left: 50%;
+      top: 55%;
+      width: 300px;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+  	color: #333;
+  }
+  .load{
+  	width: 1rem;
+  	display: block;
+  	margin: auto;
+  	margin-bottom: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	  z-index: 2999;
+  }
+  
+.lt{
+	display: inline-block;
+	color: #F6F6F6;
+	margin-top: 1rem;
+	  z-index: 2999;
+}
+
+    .r1 {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 230, 0, 0.8);
+      text-align: center;
+      display: none;
+    }
+
+    .r1m {
+      margin-top: 8%;
+      width: 85%;
+      /* border-radius: 10px;
+	overflow: hidden; */
+    }
+
+    .logo {
+      position: fixed;
+      z-index: 999;
+      top: 30px;
+      right: 10px;
+      text-align: right;
+    }
+
+    .logom {
+      width: 90px;
+    }
+
+    .menu {
+      position: fixed;
+      z-index: 999;
+      bottom: 100px;
+      left: 3.6rem;
+    }
+
+    .menum {
+      width: 85%;
+    }
+
+    .as {
+
+      width: fit-content;
+      height: 5rem;
+      position: absolute;
+      z-index: 999;
+      left: 0.5rem;
+      bottom: 10px;
+    }
+
+    a {
+      /* 	background-color: red; */
+      display: inline-block;
+      width: 2.7rem;
+      height: 70%;
+      opacity: 0.5;
+      margin-right: -0.1rem;
+    }
+	.btn{
+		position: fixed;
+		z-index: 2000;
+		left:5rem;
+		bottom:8.5rem;
+		opacity: 0;
+	}
+	.btni{
+		width: 1rem;
+		font-size: 16px;
+		vertical-align: middle;
+	}
+	#play{
+		display: none;
+	}
+	.wbtn{
+		position: fixed;
+		color: #F6F6F6;
+		bottom: 7rem;
+		z-index: 10000;
+		font-size: 14px;
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
+	.wbtn2{
+			border-bottom: 1px solid white;
+			width: fit-content;
+			margin: auto;
+	}
+	.start{
+		position: fixed;
+		z-index: 2800;
+		width: 100%;
+		text-align: center;
+		top: 45%;
+		display: none;
+	}
+	.si{
+		width: 80%;
+		margin: auto;
+	}
+	#st{
+		position: fixed;
+		/* background-color: gold; */
+		top: 49%;
+		left: 19%;
+		height: 4rem;
+		width: 16.5rem;
+		z-index: 3300;
+		display: none;
+	}
+	
+  </style>
+</head>
+
+<body>
+<div class="btn" id="pause" onclick="pause()">
+		<img src="sources/pause.png" class="btni">
+		<span class="btni">暂停</span>
+	</div>
+	<div class="btn" id="play" onclick="play()">
+		<img src="sources/play.png" class="btni">
+		<span class="btni">播放</span>
+	</div>
+  <div id="r1" class="r1" onclick="closed()">
+    <img src="sources/r3.png" class="r1m">
+  </div>
+  <div class="logo">
+    <img src="sources/logo.png" class="logom">
+  </div>
+  <div class="menu">
+    <div class="as">
+      <a class="mb1" href="b1.html"></a>
+      <a></a>
+      <a class="ml2" href="l2.html"></a>
+      <a class="ml3" href="l3.html"></a>
+      <a class="ml4" href="l4.html"></a>
+      <a class="ml5" href="l5.html"></a>
+    </div>
+    <img src="sources/ml1.png" class="menum">
+  </div>
+  <div id="open">
+	  <div id="st"></div>
+	  <div class="start" id="start">
+		  <img src="sources/start.png" class="si">
+	  </div>
+	  <div class="wbtn">
+	  	 <div class="wbtn2">为什么K11
+	   <br>
+	   这么多艺术品</div></div>
+	  <img src="sources/out.png" class="lbg">
+	  	<img src="sources/door2.png" class="door">
+  </div>
+ <div class="layer">
+	
+     <div class="layer-text">
+		 <div class="load-an-view ">
+			 <div class="chasing-dots">
+		                         <div class="dot1"></div>
+		                         <div class="dot2"></div>
+		                     </div></div>
+ 		<span class="lt">Loading...</span>
+     </div>
+ </div>
+  <div class="wrapper">
+
+  </div>
+  <!-- <div class="top" onclick="a()"></div> -->
+
+  <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./script/anth.js"></script>
+
+  <script type="text/javascript">
+	  $('#st').on('touchend', function() {
+		  $('#st').css('display', 'none');
+		  $('#start,.wbtn,.door').animate({
+		  	left:"-=1rem"
+		  },100);
+		  $('#start,.wbtn,.door').delay(20).animate({
+		  	left:"+=25rem"
+		  }, 800);
+		  $('.lbg').delay(800).animate({
+		  	width:"+=70%",
+			left:"-=35%",
+			top:"-=35%",
+			opacity:"0"
+		  },800);
+		 $('.logo').delay(1200).animate({
+		 	top:"20px",
+			right:'0',
+		 },500);
+		 $('.logom').delay(1200).animate({
+		 	width:'100px'
+		 },500);
+		 $('.menu').delay(1000).animate({
+		 	left:"20px",
+		 	bottom:"20px"
+		 },500);
+		$('.btn').delay(1100).animate({
+			opacity:'1'
+		},500);
+		  $(".lbg").delay(1600).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
+		  	$(this).css('display', 'none');
+		  	next(); //这里必须加next，否则queue只会执行一次
+		  })
+		  // $('.watch3D-bg').delay(1600).animate({
+		  // 	width:"+=10%",
+		  // 			left:"-=5%",
+		  // 			top:"-=5%",
+		  // },200);
+	  });
+	  
+    // window.onload = function(){
+    // 	 w3d.pause();
+    // };
+function pause(){
+	 w3d.pause();
+	document.getElementById("play").style.display = "block";
+	document.getElementById("pause").style.display = "none"
+}
+
+function play(){
+	 w3d.play();
+	document.getElementById("pause").style.display = "block";
+	document.getElementById("play").style.display = "none"
+}
+    let layer = document.querySelector(".layer");
+
+    let w3d = new watch3D({
+      wrapper: ".wrapper",
+      autoplay: true,
+      width: 5000,
+      height: 2500,
+      num: 12,
+      maxY: 0.00000001,
+	  reverse: false,
+      tips: {
+        0: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		 content:  '<img src="sources/zoom.png"/>',
+          // content: "《Gift》",
+          callback: function (e) {
+            // w3d.pause();
+            // w3d.changeData({
+            //     num : 15,
+            //     resource : "sources/1.jpg"
+            // },true);
+            w3d.a7l1();
+          }
+        },
+        1: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		   content:  '<img src="sources/zoom.png"/>',
+          // content: "《旋转立方体》",
+          callback: function (e) {
+            w3d.a6l1();
+          }
+        },
+        2: {
+          styles: {
+            "position": "absolute",
+            "left": "-7rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		   content:  '<img src="sources/zoom.png"/>',
+          // content: "《Untitled, Dancing Partner (Edition 3/3 + 2 AP)》",
+          callback: function (e) {
+            w3d.a5l1();
+          }
+        },
+
+        //       3 : {  styles : {
+        //             "position":"absolute",
+        //             "left": "-13rem",
+        //             "background-color" : "rgba(0,0,0,0.8)",
+        //             "text-align" : "center",
+        //             "color" : "white",
+
+        //           },
+        //           content : "3 ",
+        //           callback : function(e){
+        //               w3d.pause();
+        //               w3d.changeData({
+        //                   num : 16,
+        //                   resource : "sources/8.jpg"
+        //               },true);
+        //           }
+
+        //       },
+        //       4 : {
+        //         styles : {
+        //           "position":"absolute",
+        //           "left": "-13rem",
+        //           "background-color" : "rgba(0,0,0,0.8)",
+        //           "text-align" : "center",
+        //           "color" : "white",
+        //         },
+        //         content : "4 ",
+        //         callback : function(e){
+        //             w3d.play();
+        //         }
+        //       },
+        5: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		   content:  '<img src="sources/zoom.png"/>',
+          // content: "《Movements》",
+          callback: function (e) {
+            w3d.a4l1();
+          }
+        },
+        6: {
+          styles: {
+            "position": "absolute",
+            "left": "-7rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		   content:  '<img src="sources/zoom.png"/>',
+          // content: "《Copy Orchard Pavilion Preface 1000 Times (ed 7/25)》",
+          callback: function (e) {
+            w3d.a3l1();
+          }
+        },
+        // 7 : {
+        //     styles : {
+        //      "position":"absolute",
+        //      "left": "-13rem",
+        //      "background-color" : "rgba(0,0,0,0.8)",
+        //      "text-align" : "center",
+        //      "color" : "white",
+        //     },
+        //     content : " 7",
+        //     callback : function(e){
+        //         w3d.show();
+        //     }
+        // },
+        // 8 : {
+        //     styles : {
+        //    "position":"absolute",
+        //    "left": "-13rem",
+        //    "background-color" : "rgba(0,0,0,0.8)",
+        //    "text-align" : "center",
+        //    "color" : "white",
+        //     },
+        //     content : "《Copy Orchard Pavilion Preface 1000 Times (ed 7/25)》",
+        //     callback : function(e){
+        //         w3d.show();
+        //     }
+        // },
+        9: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		   content:  '<img src="sources/zoom.png"/>',
+          // content: "《A Painting of Thought I-465》",
+          callback: function (e) {
+            w3d.a2l1();
+          }
+        },
+        10: {
+          styles: {
+            "position": "absolute",
+            "left": "-7rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+		   content:  '<img src="sources/zoom.png"/>',
+          // content: "《姐妹下山》",
+          callback: function (e) {
+            w3d.a1l1();
+          }
+        },
+        11: {
+          styles: {
+            "height": "260px",
+            "width": "100px",
+            "background-color": "rgba(0,0,0,0)",
+            "text-align": "center",
+            "margin-left": "-140px",
+            "margin-top": "-120px",
+            "color": "black",
+            "cursor": "pointer",
+
+
+          },
+          content: "",
+          callback: function (e) {
+            w3d.toq();
+            // w3d.changeData({
+            //     num : 10,
+            //     resource : "sources/4.jpg"
+            // },true);
+          }
+        },
+
+      },
+      resource: "sources/l1.jpg",
+      loadstart: function () {
+        layer.style.display = "block";
+      },
+      loadend: function (data) {
+		     document.getElementById("st").style.display = "block";
+		   document.getElementById("start").style.display = "block";
+		   
+		  // layer.style.display = "block";
+        layer.style.display = "none";
+      }
+    });
+    function closed() {
+      document.getElementById("r1").style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
