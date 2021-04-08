@@ -8,8 +8,9 @@
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <title>K11艺术空间</title>
   <style>
+	
     .back {
-      position: fixed;
+      position: absolute;
       left: 1.25rem;
       top: 1.25rem;
       z-index: 9999;
@@ -29,13 +30,12 @@
     }
 
     .music {
-      position: fixed;
-      top: 54%;
       background-color: rgba(0, 0, 0, 0.7);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       width: 90%;
-      left: 5%;
+	  margin: auto;
+	  margin-bottom: 15px;
 
     }
 
@@ -59,7 +59,6 @@
 
     .art {
       top: 4%;
-      height: 50%;
       text-align: center;
       margin: auto;
       background-color: rgba(0, 0, 0, 0);
@@ -67,26 +66,25 @@
     }
 
     .arti {
-      height: 85%;
+     width: 100%;
       margin: 5px 0;
       border-radius: 10px;
     }
 
     .tt {
-      margin-top: 10px;
+      
       color: white;
       color: black;
       font-weight: bolder;
+	  margin-bottom: 10px;
     }
 
     .text {
-      width: 85%;
-      top: 66%;
+      width: 80%;
       color: white;
-      height: 24%;
       overflow-x: hidden;
       overflow-y: scroll;
-      padding: 10px;
+      padding: 20px;
       background-color: rgba(0, 0, 0, 0.8);
     }
 
@@ -108,7 +106,7 @@
 
 <body>
   <img src="sources/info.jpg" class="bg">
-  <a class="back" href="javascript:history.go(-1);">
+ 
 
     <img src="sources/bb.png" class="backi">
   </a>
@@ -134,9 +132,16 @@
       <p id="p3"></p>
       <p id="p4"></p>
       <p id="p5"></p>
+	  <p id="p6"></p>
+	  <p id="p7"></p>
+	  <p id="p8"></p>
+	  <p id="p9"></p>
+	  <p id="p10"></p>
     </div>
     <div id="content" class="t2"></div>
     <div id="content2" class="t2"></div>
+	 <div id="content3" class="t2"></div>
+	  <div id="content4" class="t2"></div>
   </div>
 
 
