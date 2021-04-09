@@ -1,0 +1,45 @@
+$(function () {
+  if (window.jssdk) {
+    // 配置功能
+    wx.config({
+      debug: false,
+      appId: jssdk.appId,
+      timestamp: parseInt(jssdk.timestamp),
+      nonceStr: jssdk.nonceStr,
+      signature: jssdk.signature,
+      jsApiList: [
+        "onMenuShareTimeline", //分享给好友
+        "onMenuShareAppMessage", //分享到朋友圈
+      ],
+    });
+
+    wx.ready(function () {
+      wx.onMenuShareTimeline({
+        title: "来天津K11 Select", // 分享标题
+        desc: "揭秘艺术品故事",
+        link: location.href, // 分享链接
+        // imgUrl: "http://jichou.52itstyle.com/jichou.png", // 分享图标
+        success: function () {
+          //alert("成功");
+        },
+        cancel: function () {
+          // alert("失败")
+        },
+      });
+      wx.onMenuShareAppMessage({
+        title: "来天津K11 Select", // 分享标题
+        desc: "揭秘艺术品故事",
+        link: location.href, // 分享链接
+        // imgUrl: "http://jichou.52itstyle.com/jichou.png", // 分享图标
+        success: function () {
+          //alert("成功");
+        },
+        cancel: function () {
+          //alert("失败")
+        },
+      });
+    });
+  } else {
+    location.replace("http://tjk11-hall.brilliantidea.cn/");
+  }
+});

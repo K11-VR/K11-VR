@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8">
-  
+
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <link href="dist/watch3D.min.css" type="text/css" rel="stylesheet">
- <link rel="stylesheet" href="./css/loading.css">
- <link rel="stylesheet" href="./css/index.css">
- <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
- <script src="./js/loading.js"></script>
+  <link rel="stylesheet" href="./css/loading.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="./js/loading.js"></script>
   <script type="text/javascript" src="dist/watch3D.min.js"></script>
   <title>K11艺术空间</title>
 
@@ -18,61 +18,65 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-  .layer{
+    .layer {
       position: fixed;
       left: 0px;
       top: 0px;
       width: 100%;
       height: 100%;
-     /* background: #f6f6f6; */
+      /* background: #f6f6f6; */
       z-index: 2999;
 
-	  
-  }
-  .lbg{
-	 position: fixed;
-	  left:-30%;
-	  top: -5%;
-	  width: 150%;
-	  z-index: 3000;
-  }
-  .door{
-  	position: fixed;
-  	 left:2.4rem;
-  	 top: 4.6rem;
-  	 width: 100%;
-  	 z-index: 2000;
-  }
-  .layer-text{
-  	width: 5rem;
+
+    }
+
+    .lbg {
       position: fixed;
-	  z-index: 2999;
+      left: -30%;
+      top: -5%;
+      width: 150%;
+      z-index: 3000;
+    }
+
+    .door {
+      position: fixed;
+      left: 2.4rem;
+      top: 4.6rem;
+      width: 100%;
+      z-index: 2000;
+    }
+
+    .layer-text {
+      width: 5rem;
+      position: fixed;
+      z-index: 2999;
       left: 50%;
       top: 55%;
       width: 300px;
       text-align: center;
       font-size: 12px;
       color: #fff;
-      -webkit-transform: translate(-50%,-50%);
-      transform: translate(-50%,-50%);
-  	color: #333;
-  }
-  .load{
-  	width: 1rem;
-  	display: block;
-  	margin: auto;
-  	margin-bottom: 0.5rem;
-	display: inline-block;
-	vertical-align: middle;
-	  z-index: 2999;
-  }
-  
-.lt{
-	display: inline-block;
-	color: #F6F6F6;
-	margin-top: 1rem;
-	  z-index: 2999;
-}
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: #333;
+    }
+
+    .load {
+      width: 1rem;
+      display: block;
+      margin: auto;
+      margin-bottom: 0.5rem;
+      display: inline-block;
+      vertical-align: middle;
+      z-index: 2999;
+    }
+
+    .lt {
+      display: inline-block;
+      color: #F6F6F6;
+      margin-top: 1rem;
+      z-index: 2999;
+    }
 
     .r1 {
       position: fixed;
@@ -133,141 +137,158 @@
       opacity: 0.5;
       margin-right: -0.1rem;
     }
-	.btn{
-		position: fixed;
-		z-index: 2000;
-		left:5rem;
-		bottom:8.5rem;
-		opacity: 0;
-	}
-	.btni{
-		width: 1rem;
-		font-size: 16px;
-		vertical-align: middle;
-	}
-	#play{
-		display: none;
-	}
-	.wbtn{
-		position: fixed;
-		color: #F6F6F6;
-		top: 60%;
-		z-index:9999;
-		font-size: 14px;
-		width: 100%;
-		left: 0;
-		text-align: center;
-	}
-	.wbtn2{
-			border-bottom: 1px solid white;
-			width: fit-content;
-			margin: auto;
-	}
-	.start{
-		position: fixed;
-		z-index: 2800;
-		width: 100%;
-		text-align: center;
-		top: 45%;
-		display: none;
-	}
-	.si{
-		width: 80%;
-		margin: auto;
-	}
-	#st{
-		position: fixed;
-		/* background-color: gold; */
-		top: 49%;
-		left: 19%;
-		height: 4rem;
-		width: 16.5rem;
-		z-index: 3300;
-		display: none;
-	}
-	.why{
-		position: fixed;
-		z-index: 10000;
-		font-size: 16px;
-		padding: 10%;
-		background-color: rgba(0,0,0,0.8);
-		/* border-radius: 30px; */
-		color: white;
-		line-height: 40px;
-		top:0;
-		bottom:0;
-		overflow: hidden;
-		display: none;
-		
-	}
-	.hh1{
-		text-align: center;
-		font-size: 20px;
-	}
-	.cwhy{
-		position: fixed;
-		z-index: 10000;
-		background-color: white;
-		color: black;
-		font-size: 16px;
-		padding:4px 10px;
-		width:20%;
-		left: 38%;
-		bottom:5%;
-		text-align: center;
-		border-radius:8px;
-		font-weight: bold;
-	}
-	
-		@keyframes rotate{
-	    0%{
-	        transform: rotate(0);
-	      }
-	    50%{
-	    	transform:rotate(360deg);
-	    }
-	    100%{
-	         transform: rotate(720deg);
-	    	}
-		}
-	 
-	.music{
-		background-color: black;
-		width: 40px;
-		height: 40px;
-		top:20px;
-		left: 10px;
-		border-radius: 400px;
-		position: fixed;
-		z-index: 1000000;
-	 
-	}
-	.ro{ animation: rotate 10s linear infinite;}
-	.mbtn{
-		width: 28px;
-		margin-top: 6px;
-		margin-left: 5px;
-	}
+
+    .btn {
+      position: fixed;
+      z-index: 2000;
+      left: 5rem;
+      bottom: 8.5rem;
+      opacity: 0;
+    }
+
+    .btni {
+      width: 1rem;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+
+    #play {
+      display: none;
+    }
+
+    .wbtn {
+      position: fixed;
+      color: #F6F6F6;
+      top: 60%;
+      z-index: 9999;
+      font-size: 14px;
+      width: 100%;
+      left: 0;
+      text-align: center;
+    }
+
+    .wbtn2 {
+      border-bottom: 1px solid white;
+      width: fit-content;
+      margin: auto;
+    }
+
+    .start {
+      position: fixed;
+      z-index: 2800;
+      width: 100%;
+      text-align: center;
+      top: 45%;
+      display: none;
+    }
+
+    .si {
+      width: 80%;
+      margin: auto;
+    }
+
+    #st {
+      position: fixed;
+      /* background-color: gold; */
+      top: 49%;
+      left: 19%;
+      height: 4rem;
+      width: 16.5rem;
+      z-index: 3300;
+      display: none;
+    }
+
+    .why {
+      position: fixed;
+      z-index: 10000;
+      font-size: 16px;
+      padding: 10%;
+      background-color: rgba(0, 0, 0, 0.8);
+      /* border-radius: 30px; */
+      color: white;
+      line-height: 40px;
+      top: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: none;
+
+    }
+
+    .hh1 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .cwhy {
+      position: fixed;
+      z-index: 10000;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      padding: 4px 10px;
+      width: 20%;
+      left: 38%;
+      bottom: 5%;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+
+      50% {
+        transform: rotate(360deg);
+      }
+
+      100% {
+        transform: rotate(720deg);
+      }
+    }
+
+    .music {
+      background-color: black;
+      width: 40px;
+      height: 40px;
+      top: 20px;
+      left: 10px;
+      border-radius: 400px;
+      position: fixed;
+      z-index: 1000000;
+
+    }
+
+    .ro {
+      animation: rotate 10s linear infinite;
+    }
+
+    .mbtn {
+      width: 28px;
+      margin-top: 6px;
+      margin-left: 5px;
+    }
   </style>
 </head>
 
 <body>
-	<div class="btn" style="color:#94853c;left:15px;bottom: 8.45rem;;font-size: 16px;">楼层</div>
-<div class="btn" id="pause" onclick="pause()">
-		<img src="sources/pause.png" class="btni">
-		<span class="btni">暂停</span>
-	</div>
-	<div class="btn" id="play" onclick="play()">
-		<img src="sources/play.png" class="btni">
-		<span class="btni">播放</span>
-	</div>
+  <div class="btn" style="color:#94853c;left:15px;bottom: 8.45rem;;font-size: 16px;">楼层</div>
+  <div class="btn" id="pause" onclick="pause()">
+    <img src="sources/pause.png" class="btni">
+    <span class="btni">暂停</span>
+  </div>
+  <div class="btn" id="play" onclick="play()">
+    <img src="sources/play.png" class="btni">
+    <span class="btni">播放</span>
+  </div>
   <div id="r1" class="r1" onclick="closed()">
     <img src="sources/r3.png" class="r1m">
   </div>
   <div class="music ro">
-	  <img src="sources/music.png" class="mbtn">
+    <img src="sources/music.png" class="mbtn">
   </div>
- <div class="logo">
+  <div class="logo">
     <img src="sources/logo.png" class="logom">
   </div>
   <div class="menu">
@@ -282,111 +303,115 @@
     <img src="sources/ml1.png" class="menum">
   </div>
   <div id="open">
-	  <div id="st"></div>
-	  <div class="start" id="start">
-		  <img src="sources/start.png" class="si">
-	  </div>
-	  <div class="why">
-		  <br>
-		  <h1 class="hh1"> 天津K11 Select 艺术典藏</h1>
-		  
-		  天津K11 Select 作为一家博物馆零售店，希望能够带领观众在此开启美学发现之旅。通过众多美术馆级的当代艺术品为公众带来一站式的丰富视觉盛宴，让不同的文化能够在此相互交流和激发灵感。
-		  
-		  大众对未来生活的向往有着无限想象，天津K11 Select定位于未来生活试验场并运用特色科技，旨在为观众带来全新体验。同时，将为您呈现近四十件由国内外艺术家创作的当代艺术品。艺术家用独特的语言诠释着他们眼中的未来及未来科技在社会上带来的变化。在描绘中，未来世界有着无限想象及可能性，并期待观众与艺术的对话。
-	   <div class="cwhy">关闭</div>
-	  </div>
-	
-	  <div class="wbtn">
-	  	 <div class="wbtn2">天津K11 Select 艺术典藏</div></div>
-	  <img src="sources/out.png" class="lbg">
-	  	<img src="sources/door2.png" class="door">
+    <div id="st"></div>
+    <div class="start" id="start">
+      <img src="sources/start.png" class="si">
+    </div>
+    <div class="why">
+      <br>
+      <h1 class="hh1"> 天津K11 Select 艺术典藏</h1>
+
+      天津K11 Select 作为一家博物馆零售店，希望能够带领观众在此开启美学发现之旅。通过众多美术馆级的当代艺术品为公众带来一站式的丰富视觉盛宴，让不同的文化能够在此相互交流和激发灵感。
+
+      大众对未来生活的向往有着无限想象，天津K11
+      Select定位于未来生活试验场并运用特色科技，旨在为观众带来全新体验。同时，将为您呈现近四十件由国内外艺术家创作的当代艺术品。艺术家用独特的语言诠释着他们眼中的未来及未来科技在社会上带来的变化。在描绘中，未来世界有着无限想象及可能性，并期待观众与艺术的对话。
+      <div class="cwhy">关闭</div>
+    </div>
+
+    <div class="wbtn">
+      <div class="wbtn2">天津K11 Select 艺术典藏</div>
+    </div>
+    <img src="sources/out.png" class="lbg">
+    <img src="sources/door2.png" class="door">
   </div>
- <div class="layer">
-	
-     <div class="layer-text">
-		 <div class="load-an-view ">
-			 <div class="chasing-dots">
-		                         <div class="dot1"></div>
-		                         <div class="dot2"></div>
-		                     </div></div>
- 		<span class="lt">Loading...</span>
-     </div>
- </div>
+  <div class="layer">
+
+    <div class="layer-text">
+      <div class="load-an-view ">
+        <div class="chasing-dots">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+      <span class="lt">Loading...</span>
+    </div>
+  </div>
   <div class="wrapper">
 
   </div>
   <!-- <div class="top" onclick="a()"></div> -->
 
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<!--  <script src="./script/anth.js"></script> -->
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <script src="./script/anth.js"></script>
 
   <script type="text/javascript">
-	  
-	  $(".wbtn").on('touchend', function() {
-		   $('.why').css('display', 'block');
-	   });
-	   $(".cwhy,.why").on('touchend', function() {
-	   		   $('.why').css('display', 'none');
-	    });
-		$(".music").on('touchend', function() {
-			 
-				  $(".music").toggleClass("ro");
-				  
-		 });
-		
-	  $('#st').on('touchend', function() {
-		  $('#st').css('display', 'none');
-		  $('#start,.wbtn,.door').animate({
-		  	left:"-=1rem"
-		  },100);
-		  $('#start,.wbtn,.door').delay(20).animate({
-		  	left:"+=25rem"
-		  }, 800);
-		  $('.lbg').delay(800).animate({
-		  	width:"+=70%",
-			left:"-=35%",
-			top:"-=35%",
-			opacity:"0"
-		  },800);
-		 $('.logo').delay(1200).animate({
-		 	top:"20px",
-			right:'0',
-		 },500);
-		 $('.logom').delay(1200).animate({
-		 	width:'100px'
-		 },500);
-		 $('.menu').delay(1000).animate({
-		 	left:"20px",
-		 	bottom:"20px"
-		 },500);
-		$('.btn').delay(1100).animate({
-			opacity:'1'
-		},500);
-		  $(".lbg").delay(1600).queue(function(next) { //queue()方法显示或操作在元素上执行的函数队列。
-		  	$(this).css('display', 'none');
-		  	next(); //这里必须加next，否则queue只会执行一次
-		  })
-		  // $('.watch3D-bg').delay(1600).animate({
-		  // 	width:"+=10%",
-		  // 			left:"-=5%",
-		  // 			top:"-=5%",
-		  // },200);
-	  });
-	  
+
+    $(".wbtn").on('touchend', function () {
+      $('.why').css('display', 'block');
+    });
+    $(".cwhy,.why").on('touchend', function () {
+      $('.why').css('display', 'none');
+    });
+    $(".music").on('touchend', function () {
+
+      $(".music").toggleClass("ro");
+
+    });
+
+    $('#st').on('touchend', function () {
+      $('#st').css('display', 'none');
+      $('#start,.wbtn,.door').animate({
+        left: "-=1rem"
+      }, 100);
+      $('#start,.wbtn,.door').delay(20).animate({
+        left: "+=25rem"
+      }, 800);
+      $('.lbg').delay(800).animate({
+        width: "+=70%",
+        left: "-=35%",
+        top: "-=35%",
+        opacity: "0"
+      }, 800);
+      $('.logo').delay(1200).animate({
+        top: "20px",
+        right: '0',
+      }, 500);
+      $('.logom').delay(1200).animate({
+        width: '100px'
+      }, 500);
+      $('.menu').delay(1000).animate({
+        left: "20px",
+        bottom: "20px"
+      }, 500);
+      $('.btn').delay(1100).animate({
+        opacity: '1'
+      }, 500);
+      $(".lbg").delay(1600).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+        $(this).css('display', 'none');
+        next(); //这里必须加next，否则queue只会执行一次
+      })
+      // $('.watch3D-bg').delay(1600).animate({
+      // 	width:"+=10%",
+      // 			left:"-=5%",
+      // 			top:"-=5%",
+      // },200);
+    });
+
     // window.onload = function(){
     // 	 w3d.pause();
     // };
-function pause(){
-	 w3d.pause();
-	document.getElementById("play").style.display = "block";
-	document.getElementById("pause").style.display = "none"
-}
+    function pause() {
+      w3d.pause();
+      document.getElementById("play").style.display = "block";
+      document.getElementById("pause").style.display = "none"
+    }
 
-function play(){
-	 w3d.play();
-	document.getElementById("pause").style.display = "block";
-	document.getElementById("play").style.display = "none"
-}
+    function play() {
+      w3d.play();
+      document.getElementById("pause").style.display = "block";
+      document.getElementById("play").style.display = "none"
+    }
     let layer = document.querySelector(".layer");
 
     let w3d = new watch3D({
@@ -396,7 +421,7 @@ function play(){
       height: 2500,
       num: 12,
       maxY: 0.00000001,
-	  reverse: false,
+      reverse: false,
       tips: {
         0: {
           styles: {
@@ -406,7 +431,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		 content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《Gift》",
           callback: function (e) {
             // w3d.pause();
@@ -425,7 +450,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		   content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《旋转立方体》",
           callback: function (e) {
             w3d.a6l1();
@@ -439,7 +464,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		   content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《Untitled, Dancing Partner (Edition 3/3 + 2 AP)》",
           callback: function (e) {
             w3d.a5l1();
@@ -485,7 +510,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		   content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《Movements》",
           callback: function (e) {
             w3d.a4l1();
@@ -499,7 +524,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		   content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《Copy Orchard Pavilion Preface 1000 Times (ed 7/25)》",
           callback: function (e) {
             w3d.a3l1();
@@ -539,7 +564,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		   content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《A Painting of Thought I-465》",
           callback: function (e) {
             w3d.a2l1();
@@ -553,7 +578,7 @@ function play(){
             "text-align": "center",
             "color": "white",
           },
-		   content:  '<img src="sources/zoom.png"/>',
+          content: '<img src="sources/zoom.png"/>',
           // content: "《姐妹下山》",
           callback: function (e) {
             w3d.a1l1();
@@ -588,10 +613,10 @@ function play(){
         layer.style.display = "block";
       },
       loadend: function (data) {
-		     document.getElementById("st").style.display = "block";
-		   document.getElementById("start").style.display = "block";
-		   
-		  // layer.style.display = "block";
+        document.getElementById("st").style.display = "block";
+        document.getElementById("start").style.display = "block";
+
+        // layer.style.display = "block";
         layer.style.display = "none";
       }
     });

@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+  <script src="./js/loading.js"></script>
+  <script type="text/javascript" src="dist/watch3D.min.js"></script>
   <title>K11艺术空间</title>
   <style>
-	
     .back {
       position: absolute;
       left: 1.25rem;
@@ -34,8 +36,8 @@
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       width: 90%;
-	  margin: auto;
-	  margin-bottom: 15px;
+      margin: auto;
+      margin-bottom: 15px;
 
     }
 
@@ -66,17 +68,17 @@
     }
 
     .arti {
-     width: 100%;
+      width: 100%;
       margin: 5px 0;
       border-radius: 10px;
     }
 
     .tt {
-      
+
       color: white;
       color: black;
       font-weight: bolder;
-	  margin-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     .text {
@@ -106,9 +108,9 @@
 
 <body>
   <img src="sources/info.jpg" class="bg">
- 
 
-    <img src="sources/bb.png" class="backi">
+
+  <img src="sources/bb.png" class="backi">
   </a>
   <div class="music art">
     <div id="title" class="tt"></div>
@@ -132,30 +134,33 @@
       <p id="p3"></p>
       <p id="p4"></p>
       <p id="p5"></p>
-	  <p id="p6"></p>
-	  <p id="p7"></p>
-	  <p id="p8"></p>
-	  <p id="p9"></p>
-	  <p id="p10"></p>
+      <p id="p6"></p>
+      <p id="p7"></p>
+      <p id="p8"></p>
+      <p id="p9"></p>
+      <p id="p10"></p>
     </div>
     <div id="content" class="t2"></div>
     <div id="content2" class="t2"></div>
-	 <div id="content3" class="t2"></div>
-	  <div id="content4" class="t2"></div>
+    <div id="content3" class="t2"></div>
+    <div id="content4" class="t2"></div>
   </div>
 
+  <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+  <!-- <script src="./script/info-auth.js"></script> -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.bg').animate({
+        width: '+=20%',
+        height: '+=20%',
+        left: '-=10%',
+        top: '-=10%'
+      }, 1000);
+    });
+  </script>
+  <script src="./script/info.js"></script>
 
 </body>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('.bg').animate({
-      width: '+=20%',
-      height: '+=20%',
-      left: '-=10%',
-      top: '-=10%'
-    }, 1000);
-  });
-</script>
-<script src="./script/info.js"></script>
 
 </html>

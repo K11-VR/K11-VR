@@ -17,7 +17,7 @@ $(function () {
       function (user) {
         if (!user.data.is_member) {
           location.replace(
-            "http://test.app.klub11.com/?r=page/auth&account_id=118&_redirecturl=http://tjk11-hall.brilliantidea.cn"
+            `http://test.app.klub11.com/?r=page/auth&account_id=118&_redirecturl=http://tjk11-hall.brilliantidea.cn`
           );
         } else {
           $.post(
@@ -31,6 +31,28 @@ $(function () {
               console.log("city", window.city);
             }
           );
+          $.post(
+            "http://api.brilliantidea.cn/api/v1/wechat/9999",
+            {
+              url: location.href,
+            },
+            function (result) {
+              window.jssdk = result?.data;
+
+              // 配置功能
+              wx.config({
+                debug: false,
+                appId: jssdk.appId,
+                timestamp: parseInt(jssdk.timestamp),
+                nonceStr: jssdk.nonceStr,
+                signature: jssdk.signature,
+                jsApiList: [
+                  "onMenuShareTimeline", //分享给好友
+                  "onMenuShareAppMessage", //分享到朋友圈
+                ],
+              });
+            }
+          );
         }
       }
     );
@@ -38,7 +60,7 @@ $(function () {
     $.post(
       "http://tjk11-survey.brilliantidea.cn/api/v1/tjk11-hall/get-weixin-oauth",
       {
-        redirect_url: "http://tjk11-hall.brilliantidea.cn/",
+        redirect_url: `http://tjk11-hall.brilliantidea.cn/`,
       },
       function (data) {
         const { apiUrl, ...param } = data.data;
@@ -48,4 +70,33 @@ $(function () {
       }
     );
   }
+
+  wx.ready(function () {
+    wx.onMenuShareTimeline({
+      title: "来天津K11 Select", // 分享标题
+      desc: "揭秘艺术品故事",
+      link: location.href, // 分享链接
+      // imgUrl: "http://jichou.52itstyle.com/jichou.png", // 分享图标
+      success: function () {
+        //alert("成功");
+      },
+      cancel: function () {
+        // alert("失败")
+      },
+    });
+    wx.onMenuShareAppMessage({
+      title: "来天津K11 Select", // 分享标题
+      desc: "揭秘艺术品故事",
+      link: location.href, // 分享链接
+      // imgUrl: "http://jichou.52itstyle.com/jichou.png", // 分享图标
+      success: function () {
+        //alert("成功");
+      },
+      cancel: function () {
+        //alert("失败")
+      },
+    });
+  });
+
+  window.index = true;
 });
