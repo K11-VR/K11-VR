@@ -1,8 +1,8 @@
 const data = {
   a1b1: {
     image: "sources/a1b1.jpg",
-    mp3: "audio/zh/a1b1.jpg",
-    mp3_en: "audio/en/a1b1.jpg",
+    mp3: "audio/zh/a1b1.mp3",
+    mp3_en: "audio/en/a1b1.mp3",
     p1: "龚剑",
     title: "《为一棵树所作的肖像No.5》",
     p3: "2015",
