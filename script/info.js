@@ -553,7 +553,7 @@ const data = {
 $(function () {
   // 地区限制
   if (window.city !== "天津") {
-    $("#mp3").remove();
+    $("#mp3box").remove();
   }
   const id = new URL(location).searchParams.get("id");
   console.log("id", id);
@@ -574,4 +574,12 @@ $(function () {
   $("#content4").html(data[id].content4);
   $("#image").attr("src", data[id].image);
   $("#mp3").attr("src", data[id].mp3);
+  // lang change
+  $("#lang").change(function (e) {
+    if (e.target.checked === true) {
+      $("#mp3").attr("src", data[id].mp3_en);
+    } else {
+      $("#mp3").attr("src", data[id].mp3);
+    }
+  });
 });

@@ -120,11 +120,16 @@
 
     <figure>
       <figcaption>这个作品的介绍</figcaption>
-      <!-- 动态修改mp3源 -->
-      <audio id="mp3" controls src="loading.mp3">
-        Your browser does not support the
-        <code>audio</code> element.
-      </audio>
+      <div id="mp3box">
+        <p style="margin: 0;">
+          <input type="checkbox" id="lang" value="lang">
+          <label for="lang">english</label>
+        </p>
+        <audio id="mp3" controls src="loading.mp3">
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+      </div>
     </figure>
   </div>
   <div class="text music">
@@ -148,7 +153,7 @@
 
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-  <!-- <script src="./script/info-auth.js"></script> -->
+  <script src="./script/info-auth.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       $('.bg').animate({

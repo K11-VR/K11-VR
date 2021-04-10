@@ -75,7 +75,7 @@ $(function () {
     wx.onMenuShareTimeline({
       title: "来天津K11 Select", // 分享标题
       desc: "揭秘艺术品故事",
-      link: location.href, // 分享链接
+      link: "http://tjk11-hall.brilliantidea.cn", // 分享链接
       // imgUrl: "http://jichou.52itstyle.com/jichou.png", // 分享图标
       success: function () {
         //alert("成功");
@@ -87,7 +87,7 @@ $(function () {
     wx.onMenuShareAppMessage({
       title: "来天津K11 Select", // 分享标题
       desc: "揭秘艺术品故事",
-      link: location.href, // 分享链接
+      link: "http://tjk11-hall.brilliantidea.cn", // 分享链接
       // imgUrl: "http://jichou.52itstyle.com/jichou.png", // 分享图标
       success: function () {
         //alert("成功");
