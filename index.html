@@ -346,6 +346,11 @@
   <script src="./script/anth.js"></script>
 
   <script type="text/javascript">
+    $(function () {
+      if (window.isOpen === 1 || new URL(location).searchParams.get("local") === '1') {
+        $('#open').remove()
+      }
+    })
 
     $(".wbtn").on('touchend', function () {
       $('.why').css('display', 'block');
@@ -360,6 +365,7 @@
     });
 
     $('#st').on('touchend', function () {
+      window.isOpen = 1;
       $('#st').css('display', 'none');
       $('#start,.wbtn,.door').animate({
         left: "-=1rem"
