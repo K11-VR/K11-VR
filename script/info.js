@@ -46,28 +46,52 @@ const data = {
       "Inner Mongolian artist born in 1984 who currently lives in Beijing. His work often makes references to contemporary art and music. These references grow spontaneously in the creative process—which can be considered a metaphor for the unplanned formation of the visual cultures in Chinese cities. He also believes in the the visual form and title of his work are in an open relationship that allows for limitless possibilities of interpretation. ",
   },
   a2l1: {
-    image: "sources/a2l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "赵要",
-    title: "《很有想法的绘画 I - 465》",
-    p3: "2011",
-    p4: "丙烯、现成织品",
-    p5: "100 × 80 厘米",
-    p6: "Zhao Yao",
-    p7: "A Painting of Thought I-465",
-    p8: "2011",
-    p9: "Acrylic on found fabric",
-    p10: "100 × 80 cm",
-    content:
-      "赵要属于一群迅速重新定义了中国当代艺术运动的年轻艺术家，《很有想法的绘画 I - 465》呈现一个崭新的视觉语言，一个四种色块组成的三角形堆叠在花呢织品的表面上。赵要早期的创作深受藏传佛教经幡的启發，近期逐渐转向对纺织品艺术性的探索。其艺术语彙着重于探究社会文化现实与基础结构间的关联，同时也对真实性和原创性的艺术理想提出了种种质疑。",
-    content2:
-      "观念艺术家赵要生于1981年，目前定居于北京。作为一群在中国重新定义当代艺术之艺术家其中的一员，其创作涵盖了装置、绘画、录像及摄影等多种媒材。",
-    content3:
-      "Zhao Yao is part of a group of young Chinese artists quickly redefining the Contemporary Art movement in China. A Painting of Thought 1-465 creates a new visual language- a triangle made up of block colours shapes painted upon a tweed fabric. Previous works by the artist were inspired by Tibetan prayer flags, and the present work continues his artistic exploration on textiles. His work explores how primary structures connect to the socio-cultural reality, but also questioning the artistic ideals of authenticity and originality.",
-    content4:
-      "Chinese conceptual artist born in 1981 who currently lives in Beijing. He is part of an important group of emerging Chinese artists who have been redefining contemporary art in China. He works with a wide range of materials including video, painting, sculptures, and mix media.",
-  },
+  //   image: "sources/a2l1.jpg",
+  //   mp3:
+  //     "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
+  //   p1: "赵要",
+  //   title: "《很有想法的绘画 I - 465》",
+  //   p3: "2011",
+  //   p4: "丙烯、现成织品",
+  //   p5: "100 × 80 厘米",
+  //   p6: "Zhao Yao",
+  //   p7: "A Painting of Thought I-465",
+  //   p8: "2011",
+  //   p9: "Acrylic on found fabric",
+  //   p10: "100 × 80 cm",
+  //   content:
+  //     "赵要属于一群迅速重新定义了中国当代艺术运动的年轻艺术家，《很有想法的绘画 I - 465》呈现一个崭新的视觉语言，一个四种色块组成的三角形堆叠在花呢织品的表面上。赵要早期的创作深受藏传佛教经幡的启發，近期逐渐转向对纺织品艺术性的探索。其艺术语彙着重于探究社会文化现实与基础结构间的关联，同时也对真实性和原创性的艺术理想提出了种种质疑。",
+  //   content2:
+  //     "观念艺术家赵要生于1981年，目前定居于北京。作为一群在中国重新定义当代艺术之艺术家其中的一员，其创作涵盖了装置、绘画、录像及摄影等多种媒材。",
+  //   content3:
+  //     "Zhao Yao is part of a group of young Chinese artists quickly redefining the Contemporary Art movement in China. A Painting of Thought 1-465 creates a new visual language- a triangle made up of block colours shapes painted upon a tweed fabric. Previous works by the artist were inspired by Tibetan prayer flags, and the present work continues his artistic exploration on textiles. His work explores how primary structures connect to the socio-cultural reality, but also questioning the artistic ideals of authenticity and originality.",
+  //   content4:
+  //     "Chinese conceptual artist born in 1981 who currently lives in Beijing. He is part of an important group of emerging Chinese artists who have been redefining contemporary art in China. He works with a wide range of materials including video, painting, sculptures, and mix media.",
+  //
+   image: "sources/a7l1.jpg",
+     mp3:
+       "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
+     p1: "塞里斯．怀恩．埃文斯",
+     title: "《礼物》",
+     p3: "2012年",
+     p4: "吊灯（由玻璃工艺大师Galliano Ferro製作）、独立通风装置、闪光灯播放机 ",
+     p5: "105 × 80厘米,200 × 100 × 100 厘米",
+     p6: "Cerith Wyn Evans",
+     p7: "Gift",
+     p8: "2012",
+     p9:
+       "Chandelier (Galliano Ferro), independent breather unit and flash player",
+     p10: "H105 x Dia 80 cm",
+     content:
+       "吊灯的形式、美感和理念在塞里斯．怀恩．埃文斯的艺术实践中佔有相当特殊的地位，作为既是通信又可传输的一种载体。这一系列吊灯凋塑以其诗意和精緻的美学形式广受赞誉，致力于将物质的象徵性转化为现代版的传送器。《礼物》的主体由一个传统吊灯组成，此吊灯出自知名穆拉诺玻璃工艺大师Galliano Ferro之手。透过精细的计算机程序，吊灯的灯以莫尔斯电码的独特排列顺序闪烁以传达信息。此作既代表是光的来源，又是对光的评论，同时亦创造了一种挑战观众交流、感知和现实观念的环境。",
+     content2:
+       "英国艺术家塞里斯．怀恩．埃文斯于1958年生于威尔士拉内利，他深具观念性的创作，探索着如何透过装置、凋塑、摄影、电影和文字等多样媒材形式传达不同想法与思维模式。怀恩．埃文斯最初以短片和实验性电影製作人的身份开始艺术家生涯，随后在90年代转向全心發展视觉和观念艺术。他曾在多个艺术机构举办个展，包括伦敦泰特不列颠美术馆（2018）、伦敦蛇形画廊（2014）、巴黎现代艺术博物馆（2006）以及巴黎庞毕度艺术中心（2004）。其作品也被伦敦泰特美术馆、纽约现代艺术博物馆与巴黎庞毕度艺术中心等机构收藏。",
+     content3:
+       "The form, aesthetics, and idea of the chandelier holds a special place in the practice of Cerith Wyn Evans. It serves as the vehicle of both communication and transmission. Widely acclaimed for its poetic and refined aesthetic form, the series of chandelier sculptures focus on transforming potent symbols of materiality into a modern transmitter. Gift consists of a traditional chandelier made by the well-known Muranese manufacturer Galliano Ferro. A meticulous computer program causes the chandelier’s lights to flash in Morse code. Whilst simultaneously being a source of light and a commentary on light, current work manifests in itself an environment that challenges the viewer's notions of communication, perception, and reality.",
+     content4:
+       "Cerith Wyn Evans is a British artist born in 1958 in Llanelli, Wales. His conceptual practice explores the way that ideas can be communicated through form, incorporating a diverse range of media including installation, sculpture, photography, film and text. He began his career as a short and experimental film maker, before turning to visual and conceptual art in the 1990s. Wyn Evans has had solo presentations at Tate Britain, London (2018); Serpentine Sackler Gallery, London (2014); Musée d’Art Moderne de la Ville de Paris (2006) and Centre Georges Pompidou, Paris (2004). His work is included in the collection of Tate Gallery, London; Museum of Modern Art, New York; and Centre Georges Pompidou, Paris.",
+   
+   },
   a3l1: {
     image: "sources/a3l1.jpg",
     mp3:

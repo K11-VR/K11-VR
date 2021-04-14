@@ -380,7 +380,7 @@
       }, 800);
       $('.logo').delay(1200).animate({
         top: "20px",
-        right: '0',
+        right: '20px',
       }, 500);
       $('.logom').delay(1200).animate({
         width: '100px'
@@ -428,25 +428,25 @@
       maxY: 0.00000001,
       reverse: false,
       tips: {
-        0: {
-          styles: {
-            "position": "absolute",
-            "left": "-13rem",
-            "background-color": "rgba(0,0,0,0.8)",
-            "text-align": "center",
-            "color": "white",
-          },
-          content: '<img src="sources/zoom.png"/>',
-          // content: "《Gift》",
-          callback: function (e) {
-            // w3d.pause();
-            // w3d.changeData({
-            //     num : 15,
-            //     resource : "sources/1.jpg"
-            // },true);
-            w3d.a7l1();
-          }
-        },
+        // 0: {
+        //   styles: {
+        //     "position": "absolute",
+        //     "left": "-13rem",
+        //     "background-color": "rgba(0,0,0,0.8)",
+        //     "text-align": "center",
+        //     "color": "white",
+        //   },
+        //   content: '<img src="sources/zoom.png"/>',
+        //   // content: "《Gift》",
+        //   callback: function (e) {
+        //     // w3d.pause();
+        //     // w3d.changeData({
+        //     //     num : 15,
+        //     //     resource : "sources/1.jpg"
+        //     // },true);
+        //     w3d.a7l1();
+        //   }
+        // },
         1: {
           styles: {
             "position": "absolute",
@@ -618,11 +618,13 @@
         layer.style.display = "block";
       },
       loadend: function (data) {
+
         if (document.getElementById("st")) {
           document.getElementById("st").style.display = "block";
           document.getElementById("start").style.display = "block";
           // layer.style.display = "block";
         }
+
         layer.style.display = "none";
       }
     });
