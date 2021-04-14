@@ -8,7 +8,6 @@
   <link href="dist/watch3D.min.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="./css/loading.css">
   <link rel="stylesheet" href="./css/index.css">
-  <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="./js/loading.js"></script>
   <script type="text/javascript" src="dist/watch3D.min.js"></script>
   <title>K11艺术空间</title>
@@ -342,8 +341,13 @@
   <!-- <div class="top" onclick="a()"></div> -->
 
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<<<<<<< HEAD
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <!--  <script src="./script/anth.js"></script> -->
+=======
+  <script src="./dist/jweixin-1.0.0.js"></script>
+  <script src="./script/anth.js" defer></script>
+>>>>>>> 4328356cd120c3d704b87bc17cb7513b71609df4
 
   <script type="text/javascript">
     $(function () {
@@ -619,9 +623,13 @@
         layer.style.display = "block";
       },
       loadend: function (data) {
-        document.getElementById("st").style.display = "block";
-        document.getElementById("start").style.display = "block";
-        // layer.style.display = "block";
+
+        if (document.getElementById("st")) {
+          document.getElementById("st").style.display = "block";
+          document.getElementById("start").style.display = "block";
+          // layer.style.display = "block";
+        }
+
         layer.style.display = "none";
       }
     });
