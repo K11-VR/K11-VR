@@ -304,17 +304,17 @@
       <img src="" class="qti">
     </div>
     <div class="ass">
-      <div class="a1" id="a1">
+      <div class="a1" id="a1" data-id="A">
         <img src="" class="a1i">
         <div>A</div>
         <div></div>
       </div>
-      <div class="a1" id="a2">
+      <div class="a1" id="a2" data-id="B">
         <img src="" class="a1i">
         <div>B</div>
         <div></div>
       </div>
-      <div class="a1" id="a3">
+      <div class="a1" id="a3" data-id="C">
         <img src="" class="a1i">
         <div>C</div>
         <div></div>
@@ -454,6 +454,7 @@
       });
 
       $('.sub1').click(function () {
+        sub()
         $('.bg').animate({
           width: '+=40%',
           height: '+=40%',
@@ -528,6 +529,7 @@
         $("#a1").removeClass("as");
         $("#a2").removeClass("as");
 
+        init();
       });
     });
 
