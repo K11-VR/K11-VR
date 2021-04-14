@@ -298,32 +298,31 @@
 
     <img src="sources/back.png" class="backi">
   </a>
-   <!-- 样式1 -->
-  <div class="que" class="que">
-    <div class="qt">《Future comes from the past》是韩国艺术家姜錫鉉（Eddie Kang）创作的一组艺术作品，目前收藏于天津K11 select
-      5层。他的美学思想主要來自卡通人物的视觉风格和種種怀旧的氛围。<br>以下作品同属于姜錫鉉（Eddie Kang）的是?
-      <img src="sources/1q.jpg" class="qti">
- </div>
+  <!-- 样式1 -->
+  <div class="que" class="que" id="queBox">
+    <div class="qt">
+      <img src="" class="qti">
+    </div>
     <div class="ass">
       <div class="a1" id="a1">
-        <img src="sources/2q.jpg" class="a1i">
+        <img src="" class="a1i">
         <div>A</div>
-        <div>My Universe Serues</div>
+        <div></div>
       </div>
       <div class="a1" id="a2">
-        <img src="sources/3q.jpg" class="a1i">
+        <img src="" class="a1i">
         <div>B</div>
-        <div>Untitled Kimpsons#2</div>
+        <div></div>
       </div>
       <div class="a1" id="a3">
-        <img src="sources/4q.jpg" class="a1i">
+        <img src="" class="a1i">
         <div>C</div>
-        <div>Campbell's Soup Can</div>
+        <div></div>
       </div>
     </div>
   </div>
   <!-- 样式2 -->
- <!-- <div class="que" class="que">
+  <!-- <div class="que" class="que">
      <div class="qt">艺术史上，艺术家夫妻并不少见，其中两位同月同日生的行为艺术家互为灵魂伴侣并携手走过了12年，在1988年的行为艺术作品《情人·长城》上分道扬镳，他们是（  ）。
 
   </div>
@@ -345,8 +344,8 @@
        </div>
      </div>
    </div> -->
-   <!-- 样式3 -->
-<!--  <div class="que" class="que">
+  <!-- 样式3 -->
+  <!--  <div class="que" class="que">
       <div class="qt">
 		   <img src="sources/1q.jpg" class="qti">
 		  《Future comes from the past》是韩国艺术家姜錫鉉（Eddie Kang）创作的一组艺术作品，目前收藏于天津K11 select
@@ -369,8 +368,8 @@
         </div>
       </div>
     </div> -->
- 
-  
+
+
   <div class="sub">
     <img src="sources/sub.png" class="sub1">
     <img src="sources/next.png" class="next">
@@ -387,167 +386,152 @@
   <div class="ball2">
     <img src="sources/ball2.png" class="b2i">
   </div>
+
+  <script type="text/javascript" src="./script/que.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $('.sbtn').click(function () {
+        $('.sbtn').animate({
+          opacity: '0',
+          top: '+=2%'
+        }, 300);
+        $(".sbtn").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+          $(this).css('display', 'none');
+          next(); //这里必须加next，否则queue只会执行一次
+        });
+        $('.open').animate({
+          opacity: '0',
+          width: "+=20%",
+          left: "-=5%"
+        }, 300);
+        $(".open").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+          $(this).css('display', 'none');
+          next(); //这里必须加next，否则queue只会执行一次
+        });
+        $('.tt').animate({
+          top: '-=5%'
+        }, 300);
+        $('.tti').animate({
+          opacity: '0',
+          width: "+=10%",
+          left: "-=5%"
+        }, 300);
+        $('.bg').animate({
+          width: '+=20%',
+          height: '+=20%',
+          left: '-=10%',
+          top: '-=10%'
+        }, 1000);
+        $('.que').delay(800).animate({
+          opacity: '1'
+        }, 600);
+        $(".sub").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+          $(this).css('display', 'block');
+          next(); //这里必须加next，否则queue只会执行一次
+        });
+        $(".sub").delay(600).animate({
+          opacity: '1'
+        }, 300);
+      });
+
+      $("#a1").click(function () {
+        $("#a1").addClass("as");
+        $("#a2").removeClass("as");
+        $("#a3").removeClass("as");
+      });
+
+      $("#a2").click(function () {
+        $("#a2").addClass("as");
+        $("#a1").removeClass("as");
+        $("#a3").removeClass("as");
+      });
+
+      $("#a3").click(function () {
+        $("#a3").addClass("as");
+        $("#a1").removeClass("as");
+        $("#a2").removeClass("as");
+      });
+
+      $('.sub1').click(function () {
+        $('.bg').animate({
+          width: '+=40%',
+          height: '+=40%',
+          left: '-=20%',
+          top: '-=20%'
+        }, 1000);
+        $('.que').animate({
+          opacity: '0'
+        }, 300);
+        $('.sub1').css('display', 'none');
+        $('.next').css('display', 'block');
+        $('.ans').css('display', 'block');
+        $(".ball1").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+          $(this).css('display', 'block');
+          next(); //这里必须加next，否则queue只会执行一次
+        });
+        $('.ball1').delay(500).animate({
+          opacity: '1'
+        }, 600);
+        $('.ans').delay(600).animate({
+          opacity: '1'
+        }, 600);
+        $('.ball2').delay(700).animate({
+          opacity: '1'
+        }, 600);
+        $('.b1i').delay(500).animate({
+          width: '-=5%'
+        }, 600);
+        $('.b2i').delay(700).animate({
+          width: '-=3%'
+        }, 600);
+
+
+      });
+      $('.next').click(function () {
+        $('.bg').animate({
+          width: '-=40%',
+          height: '-=40%',
+          left: '+=20%',
+          top: '+=20%'
+        }, 1000);
+        $('.que').delay(1000).animate({
+          opacity: '1'
+        }, 300);
+        $('.sub1').css('display', 'block');
+        $('.next').css('display', 'none');
+
+        $('.ball1').delay(500).animate({
+          opacity: '0'
+        }, 600);
+        $(".ball1").delay(1200).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+          $(this).css('display', 'none');
+          next(); //这里必须加next，否则queue只会执行一次
+        });
+        $('.ans').delay(600).animate({
+          opacity: '0'
+        }, 600);
+        $(".ans").delay(1200).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+          $(this).css('display', 'none');
+          next(); //这里必须加next，否则queue只会执行一次
+        });
+        $('.ball2').delay(700).animate({
+          opacity: '0'
+        }, 600);
+        $('.b1i').delay(500).animate({
+          width: '+=5%'
+        }, 600);
+        $('.b2i').delay(700).animate({
+          width: '+=3%'
+        }, 600);
+        $("#a3").removeClass("as");
+        $("#a1").removeClass("as");
+        $("#a2").removeClass("as");
+
+      });
+    });
+
+  </script>
 </body>
-<script type="text/javascript">
-  function getText(arr) {
-    return arr[Math.floor((arr.length * Math.random()))]
-  }
-  $(document).ready(function () {
-
-    var rightText = [
-      '任何瞬间的心动都不容易，不要怠慢了它——毛姆',
-    ];
-    var wrongText = [
-      '任何瞬间的心动都不容易，不要怠慢了它——毛姆2',
-    ];
-    var ansResult = true;
-
-    if (ansResult) {
-      $('#ansText').html(getText(rightText));
-    } else {
-      $('#ansText').html(getText(wrongText));
-    }
-
-    $('.sbtn').click(function () {
-      $('.sbtn').animate({
-        opacity: '0',
-        top: '+=2%'
-      }, 300);
-      $(".sbtn").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-        $(this).css('display', 'none');
-        next(); //这里必须加next，否则queue只会执行一次
-      });
-      $('.open').animate({
-        opacity: '0',
-        width: "+=20%",
-        left: "-=5%"
-      }, 300);
-      $(".open").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-        $(this).css('display', 'none');
-        next(); //这里必须加next，否则queue只会执行一次
-      });
-      $('.tt').animate({
-        top: '-=5%'
-      }, 300);
-      $('.tti').animate({
-        opacity: '0',
-        width: "+=10%",
-        left: "-=5%"
-      }, 300);
-      $('.bg').animate({
-        width: '+=20%',
-        height: '+=20%',
-        left: '-=10%',
-        top: '-=10%'
-      }, 1000);
-      $('.que').delay(800).animate({
-        opacity: '1'
-      }, 600);
-      $(".sub").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-        $(this).css('display', 'block');
-        next(); //这里必须加next，否则queue只会执行一次
-      });
-      $(".sub").delay(600).animate({
-        opacity: '1'
-      }, 300);
-    });
-
-    $("#a1").click(function () {
-      $("#a1").addClass("as");
-      $("#a2").removeClass("as");
-      $("#a3").removeClass("as");
-    });
-
-    $("#a2").click(function () {
-      $("#a2").addClass("as");
-      $("#a1").removeClass("as");
-      $("#a3").removeClass("as");
-    });
-
-    $("#a3").click(function () {
-      $("#a3").addClass("as");
-      $("#a1").removeClass("as");
-      $("#a2").removeClass("as");
-    });
-
-    $('.sub1').click(function () {
-      $('.bg').animate({
-        width: '+=40%',
-        height: '+=40%',
-        left: '-=20%',
-        top: '-=20%'
-      }, 1000);
-      $('.que').animate({
-        opacity: '0'
-      }, 300);
-      $('.sub1').css('display', 'none');
-      $('.next').css('display', 'block');
-      $('.ans').css('display', 'block');
-      $(".ball1").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-        $(this).css('display', 'block');
-        next(); //这里必须加next，否则queue只会执行一次
-      });
-      $('.ball1').delay(500).animate({
-        opacity: '1'
-      }, 600);
-      $('.ans').delay(600).animate({
-        opacity: '1'
-      }, 600);
-      $('.ball2').delay(700).animate({
-        opacity: '1'
-      }, 600);
-      $('.b1i').delay(500).animate({
-        width: '-=5%'
-      }, 600);
-      $('.b2i').delay(700).animate({
-        width: '-=3%'
-      }, 600);
-
-
-    });
-    $('.next').click(function () {
-      $('.bg').animate({
-        width: '-=40%',
-        height: '-=40%',
-        left: '+=20%',
-        top: '+=20%'
-      }, 1000);
-      $('.que').delay(1000).animate({
-        opacity: '1'
-      }, 300);
-      $('.sub1').css('display', 'block');
-      $('.next').css('display', 'none');
-
-      $('.ball1').delay(500).animate({
-        opacity: '0'
-      }, 600);
-      $(".ball1").delay(1200).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-        $(this).css('display', 'none');
-        next(); //这里必须加next，否则queue只会执行一次
-      });
-      $('.ans').delay(600).animate({
-        opacity: '0'
-      }, 600);
-      $(".ans").delay(1200).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-        $(this).css('display', 'none');
-        next(); //这里必须加next，否则queue只会执行一次
-      });
-      $('.ball2').delay(700).animate({
-        opacity: '0'
-      }, 600);
-      $('.b1i').delay(500).animate({
-        width: '+=5%'
-      }, 600);
-      $('.b2i').delay(700).animate({
-        width: '+=3%'
-      }, 600);
-      $("#a3").removeClass("as");
-      $("#a1").removeClass("as");
-      $("#a2").removeClass("as");
-
-    });
-  });
-
-</script>
 
 </html>
