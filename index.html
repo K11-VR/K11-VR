@@ -98,20 +98,20 @@
     .logo {
       position: fixed;
       z-index: 999;
-      top: 30px;
-      right: 10px;
+      top: 20px;
+      right: 20px;
       text-align: right;
     }
 
     .logom {
-      width: 90px;
+      width: 100px;
     }
 
     .menu {
       position: fixed;
       z-index: 999;
-      bottom: 100px;
-      left: 3.6rem;
+      bottom: 20px;
+      left: 20px;
     }
 
     .menum {
@@ -284,9 +284,9 @@
   <div id="r1" class="r1" onclick="closed()">
     <img src="sources/r3.png" class="r1m">
   </div>
-  <div class="music ro">
+<!--  <div class="music ro">
     <img src="sources/music.png" class="mbtn">
-  </div>
+  </div> -->
   <div class="logo">
     <img src="sources/logo.png" class="logom">
   </div>
@@ -341,13 +341,12 @@
   <!-- <div class="top" onclick="a()"></div> -->
 
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<<<<<<< HEAD
+
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-<!--  <script src="./script/anth.js"></script> -->
-=======
+
   <script src="./dist/jweixin-1.0.0.js"></script>
-  <script src="./script/anth.js" defer></script>
->>>>>>> 4328356cd120c3d704b87bc17cb7513b71609df4
+<!--  <script src="./script/anth.js" defer></script> -->
+
 
   <script type="text/javascript">
     $(function () {
@@ -383,17 +382,17 @@
         top: "-=35%",
         opacity: "0"
       }, 800);
-      $('.logo').delay(1200).animate({
-        top: "20px",
-        right: '20px',
-      }, 500);
-      $('.logom').delay(1200).animate({
-        width: '100px'
-      }, 500);
-      $('.menu').delay(1000).animate({
-        left: "20px",
-        bottom: "20px"
-      }, 500);
+      // $('.logo').delay(1200).animate({
+      //   top: "20px",
+      //   right: '20px',
+      // }, 500);
+      // $('.logom').delay(1200).animate({
+      //   width: '100px'
+      // }, 500);
+      // $('.menu').delay(1000).animate({
+      //   left: "20px",
+      //   bottom: "20px"
+      // }, 500);
       $('.btn').delay(1100).animate({
         opacity: '1'
       }, 500);
