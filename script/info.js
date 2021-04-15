@@ -24,8 +24,8 @@ const data = {
   },
   a1l1: {
     image: "sources/a1l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
+   mp3: "audio/zh/a1l1.mp3",
+   mp3_en: "audio/en/a1l1.mp3",
     p1: "尉洪磊",
     title: "《姐妹下山》",
     p3: "2016",
@@ -48,9 +48,9 @@ const data = {
   a2l1: {
 
    image: "sources/a7l1.jpg",
-     mp3:
-       "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-     p1: "塞里斯．怀恩．埃文斯",
+    mp3: "audio/zh/a2l1.mp3",
+    mp3_en: "audio/en/a2l1.mp3",
+	p1: "塞里斯．怀恩．埃文斯",
      title: "《礼物》",
      p3: "2012年",
      p4: "吊灯（由玻璃工艺大师Galliano Ferro製作）、独立通风装置、闪光灯播放机 ",
@@ -73,9 +73,9 @@ const data = {
    },
   a3l1: {
     image: "sources/a3l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "邱志杰",
+   mp3: "audio/zh/a3l1.mp3",
+   mp3_en: "audio/en/a3l1.mp3",
+	p1: "邱志杰",
     title: "《重复书写一千遍兰亭序》",
     p3: "1990-1995",
     p4: "录像",
@@ -96,9 +96,9 @@ const data = {
   },
   a4l1: {
     image: "sources/a4l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "马秋莎",
+   mp3: "audio/zh/a4l1.mp3",
+   mp3_en: "audio/en/a4l1.mp3",
+   p1: "马秋莎",
     title: "《从平渊里4号到天桥北里4号》",
     p3: "2007",
     p4: "单屏录像",
@@ -119,9 +119,9 @@ const data = {
   },
   a5l1: {
     image: "sources/a5l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "刘窗",
+   mp3: "audio/zh/a5l1.mp3",
+   mp3_en: "audio/en/a5l1.mp3",
+	p1: "刘窗",
     title: "《無題（舞伴）》",
     p3: "2014",
     p4: "录像",
@@ -142,9 +142,9 @@ const data = {
   },
   a6l1: {
     image: "sources/a6l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "张鼎",
+   mp3: "audio/zh/a6l1.mp3",
+   mp3_en: "audio/en/a6l1.mp3",
+   p1: "张鼎",
     title: "《旋转立方体》",
     p3: "2016",
     p4: "不锈钢立方体镀24k金、电机、调速器、电线",
@@ -165,9 +165,9 @@ const data = {
   },
   a7l1: {
     image: "sources/a7l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "塞里斯．怀恩．埃文斯",
+    mp3: "audio/zh/a7l1.mp3",
+    mp3_en: "audio/en/a7l1.mp3",
+	p1: "塞里斯．怀恩．埃文斯",
     title: "《礼物》",
     p3: "2012年",
     p4: "吊灯（由玻璃工艺大师Galliano Ferro製作）、独立通风装置、闪光灯播放机 ",
@@ -189,9 +189,9 @@ const data = {
   },
   a1l2: {
     image: "sources/a1l2.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "关小",
+    mp3: "audio/zh/a1l2.mp3",
+    mp3_en: "audio/en/a1l2.mp3",
+	p1: "关小",
     title: "《Din Din Jaarh》",
     p3: "2015",
     p4: "黄铜、车轮、绳索",
@@ -212,9 +212,9 @@ const data = {
   },
   a2l2: {
     image: "sources/a2l2.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "龚剑",
+ mp3: "audio/zh/a2l2.mp3",
+    mp3_en: "audio/en/a2l2.mp3",
+p1: "龚剑",
     title: "《天鹅No.4》",
     p3: "2015",
     p4: "布面丙烯",
@@ -233,6 +233,8 @@ const data = {
   },
   a3l2: {
     image: "sources/a3l2.jpg",
+	mp3: "audio/zh/a3l2.mp3",
+	mp3_en: "audio/en/a3l2.mp3",
     p1: "胡玛·芭芭",
     title: "《无题》",
     p3: "2013",
@@ -254,9 +256,9 @@ const data = {
   },
   a4l2: {
     image: "sources/a4l2.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "威尔·本尼迪克特",
+   mp3: "audio/zh/a41l2.mp3",
+   mp3_en: "audio/en/a4l2.mp3",
+   p1: "威尔·本尼迪克特",
     title: "《怒吼与否》",
     p3: "2014",
     p4: "水粉、泡沫塑料、布面、铝框加玻璃",
@@ -277,9 +279,9 @@ const data = {
   },
   a5l2: {
     image: "sources/a5l2.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "尚一心",
+   mp3: "audio/zh/a5l2.mp3",
+   mp3_en: "audio/en/a5l2.mp3",
+   p1: "尚一心",
     title: "《4102》",
     p3: "2012",
     p4: "麻布丙烯",
@@ -300,9 +302,9 @@ const data = {
   },
   a6l2: {
     image: "sources/a6l2.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "周思维",
+   mp3: "audio/zh/a6l2.mp3",
+   mp3_en: "audio/en/a6l2.mp3",
+	p1: "周思维",
     title: "《花瓶（西双版纳）》 ",
     p3: "2016",
     p4: "布面油画",
@@ -323,9 +325,9 @@ const data = {
   },
   a1l3: {
     image: "sources/a1l3.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "赵要",
+   mp3: "audio/zh/a1l3.mp3",
+   mp3_en: "audio/en/a1l3.mp3",
+	p1: "赵要",
     title: "《很有想法的绘画 III-101》",
     p3: "2011",
     p4: "织物上丙烯",
@@ -346,9 +348,9 @@ const data = {
   },
   a2l3: {
     image: "sources/a2l3.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "周思维",
+   mp3: "audio/zh/a2l3.mp3",
+   mp3_en: "audio/en/a2l3.mp3",
+	p1: "周思维",
     title: "《合照》 ",
     p3: "2015-2016",
     p4: "布面油画",
@@ -369,9 +371,9 @@ const data = {
   },
   a3l3: {
     image: "sources/a3l3.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "郑婷婷",
+   mp3: "audio/zh/a3l3.mp3",
+   mp3_en: "audio/en/a3l3.mp3",
+	p1: "郑婷婷",
     title: "《关于沙点的调查（下午五时）》 ",
     p3: "2017",
     p4: "布面油画",
@@ -392,9 +394,9 @@ const data = {
   },
   a4l3: {
     image: "sources/a4l3.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "吉尔·德·贝兰库尔",
+   mp3: "audio/zh/a4l3.mp3",
+   mp3_en: "audio/en/a4l3.mp3",
+   p1: "吉尔·德·贝兰库尔",
     title: "《探索先知》",
     p3: "2013",
     p4: "木板油画",
@@ -415,9 +417,9 @@ const data = {
   },
   a5l3: {
     image: "sources/a5l3.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "陈维",
+   mp3: "audio/zh/a5l3.mp3",
+   mp3_en: "audio/en/a5l3.mp3",
+	p1: "陈维",
     title: "《布帘后的偶像》 ",
     p3: "2009",
     p4: "收藏级喷墨打印",
@@ -438,9 +440,9 @@ const data = {
   },
   a1l4: {
     image: "sources/a1l4.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "洛朗‧格拉索",
+   mp3: "audio/zh/a1l4.mp3",
+   mp3_en: "audio/en/a1l4.mp3",
+	p1: "洛朗‧格拉索",
     title: "《研究过往》",
     p3: "2014",
     p4: "木板油画",
@@ -461,9 +463,9 @@ const data = {
   },
   a2l4: {
     image: "sources/a2l4.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "刘唯艰",
+   mp3: "audio/zh/a2l4.mp3",
+   mp3_en: "audio/en/a2l4.mp3",
+	p1: "刘唯艰",
     title: "《他的家》",
     p3: "2009",
     p4: "布面丙烯",
@@ -484,9 +486,9 @@ const data = {
   },
   a3l4: {
     image: "sources/a3l4.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "谢墨凛",
+   mp3: "audio/zh/a3l4.mp3",
+   mp3_en: "audio/en/a3l4.mp3",
+	p1: "谢墨凛",
     title: "《叠063》",
     p3: "2014",
     p4: "布面丙烯及丙烯材料",
@@ -507,9 +509,9 @@ const data = {
   },
   a1l5: {
     image: "sources/a1l5.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "权五祥",
+    mp3: "audio/zh/a1l5.mp3",
+    mp3_en: "audio/en/a1l5.mp3",
+	p1: "权五祥",
     title: "《2009年9月》",
     p3: "2011",
     p4: "彩色印刷、木框",
@@ -530,9 +532,9 @@ const data = {
   },
   a2l5: {
     image: "sources/a2l5.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "姜錫鉉",
+   mp3: "audio/zh/a2l5.mp3",
+   mp3_en: "audio/en/a2l5.mp3",
+   p1: "姜錫鉉",
     title: "《温故而知新》",
     p3: "2018",
     p4: "玻璃纤维",
@@ -553,9 +555,9 @@ const data = {
   },
    a3l5: {
     image: "sources/a2l1.jpg",
-    mp3:
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3",
-    p1: "赵要",
+   mp3: "audio/zh/a3l5.mp3",
+   mp3_en: "audio/en/a3l5.mp3",
+	p1: "赵要",
     title: "《很有想法的绘画 I - 465》",
     p3: "2011",
     p4: "丙烯、现成织品",
