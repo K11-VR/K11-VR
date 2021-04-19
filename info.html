@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="./js/loading.js"></script>
@@ -105,7 +106,6 @@
     }
   </style>
 </head>
-
 <body>
   <img src="sources/info.jpg" class="bg">
 
@@ -115,20 +115,19 @@
     <img id="image" src="sources/loading.jpg" class="arti">
   </div>
   <div class="music">
-
     <figure>
-      <figcaption>这个作品的介绍</figcaption>
-      <div id="mp3box">
-        <p style="margin: 0;">
-          <input type="checkbox" id="lang" value="lang">
-          <label for="lang">english</label>
-        </p>
-        <audio id="mp3" controls src="loading.mp3">
-          Your browser does not support the
-          <code>audio</code> element.
-        </audio>
+
+        <div id="mp3box">
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="lang">
+        <label class="custom-control-label" for="lang">English</label>
       </div>
-    </figure>
+      <audio id="mp3" controls src="loading.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </div>
+  </figure>
   </div>
   <div class="text music">
     <div class="t1">
