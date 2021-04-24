@@ -10,6 +10,7 @@
   <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="./js/loading.js"></script>
   <script type="text/javascript" src="dist/watch3D.min.js"></script>
+	<link rel="stylesheet" href="css/audio.css" />
   <title>K11艺术空间</title>
   <style>
     .back {
@@ -116,18 +117,30 @@
   </div>
   <div class="music">
     <figure>
-
-        <div id="mp3box">
-      <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="lang">
-        <label class="custom-control-label" for="lang">English</label>
+      <div id="mp3box">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="lang">
+          <label class="custom-control-label" for="lang">English</label>
+        </div>
+        <audio id="mp3" controls src="loading.mp3">
+          Your browser does not support the
+          <code>audio</code> element.
+        </audio>
+        <div id="video-controls" class="controls" data-state="hidden">
+          <button id="playpause" type="button" data-state="play">Play/Pause</button>
+          <button id="stop" type="button" data-state="stop">Stop</button>
+          <div class="progress">
+            <progress id="progress" value="0" min="0">
+              <span id="progress-bar"></span>
+            </progress>
+          </div>
+          <!-- <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+          <button id="volinc" type="button" data-state="volup">Vol+</button>
+          <button id="voldec" type="button" data-state="voldown">Vol-</button>
+          <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button> -->
+        </div>
       </div>
-      <audio id="mp3" controls src="loading.mp3">
-        Your browser does not support the
-        <code>audio</code> element.
-      </audio>
-    </div>
-  </figure>
+    </figure>
   </div>
   <div class="text music">
     <div class="t1">
@@ -162,6 +175,7 @@
     });
   </script>
   <script src="./script/info.js"></script>
+	<script src="js/video-player.js"></script>
 
 </body>
 
