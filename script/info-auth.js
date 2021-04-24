@@ -14,10 +14,11 @@ $(function () {
         timestamp: parseInt(jssdk.timestamp),
         nonceStr: jssdk.nonceStr,
         signature: jssdk.signature,
-        jsApiList: [
-          "onMenuShareTimeline", //分享给好友
-          "onMenuShareAppMessage", //分享到朋友圈
-        ],
+        jsApiList: jssdk.jsApiList,
+        // jsApiList: [
+        //   "onMenuShareTimeline", //分享给好友
+        //   "onMenuShareAppMessage", //分享到朋友圈
+        // ],
       });
     }
   );
@@ -46,5 +47,16 @@ $(function () {
         //alert("失败")
       },
     });
+    wx.getLocation({
+      type: 'wgs84',
+      success (res) {
+        // 天津 经度 117.2 纬度 39.13
+        window.longitude = res.longitude // 经度
+        window.latitude = res.latitude // 纬度
+      },
+      cancel: function () {
+        alert("获取定位失败")
+      },
+     })
   });
 });

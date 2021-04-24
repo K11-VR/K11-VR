@@ -581,6 +581,11 @@ $(function () {
   // if (window.city !== "天津") {
   //   $("#mp3box").remove();
   // }
+  
+  // 天津 经度 117.2 纬度 39.13
+  if (!(window.longitude > 116 && window.longitude < 119 && window.latitude > 38 && window.latitude < 41)) {
+    $("#mp3box").remove();
+  }
   const id = new URL(location).searchParams.get("id");
   console.log("id", id);
   $("#title").html(data[id].title);
