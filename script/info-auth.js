@@ -32,7 +32,7 @@ $(function () {
         //alert("成功");
       },
       cancel: function () {
-        // alert("失败")
+        alert("分享给好友失败\n" + JSON.stringify(window.jssdk));
       },
     });
     wx.onMenuShareAppMessage({
