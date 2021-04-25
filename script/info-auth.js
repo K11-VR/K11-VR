@@ -5,7 +5,7 @@ $(function () {
       url: location.href,
     },
     function (result) {
-      window.jssdk = result?.data;
+      window.jssdk = result.data;
 
       // 配置功能
       wx.config({

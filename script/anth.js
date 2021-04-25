@@ -23,7 +23,7 @@ if (!local) {
               code,
             },
             function (user) {
-              window.city = user?.data?.city;
+              window.city = user.data.city;
               console.log("city", window.city);
             }
           );
@@ -33,7 +33,7 @@ if (!local) {
               url: location.href,
             },
             function (result) {
-              window.jssdk = result?.data;
+              window.jssdk = result.data;
 
               // 配置功能
               wx.config({
