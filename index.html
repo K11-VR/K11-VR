@@ -35,14 +35,16 @@
       top: -5%;
       width: 150%;
       z-index: 3000;
+	   height: 110vh;
     }
 
     .door {
       position: fixed;
       left: 2.4rem;
-      top: 4.6rem;
+      top: 8%;
       width: 100%;
       z-index: 2000;
+	  height: 75%;
     }
 
     .layer-text {
@@ -155,31 +157,7 @@
       display: none;
     }
 
-    .wbtn {
-      position: fixed;
-      color: #F6F6F6;
-      top: 60%;
-      z-index: 9999;
-      font-size: 14px;
-      width: 100%;
-      left: 0;
-      text-align: center;
-    }
-
-    .wbtn2 {
-      border-bottom: 1px solid white;
-      width: fit-content;
-      margin: auto;
-    }
-
-    .start {
-      position: fixed;
-      z-index: 2800;
-      width: 100%;
-      text-align: center;
-      top: 45%;
-      display: none;
-    }
+  
 
     .si {
       width: 80%;
@@ -273,6 +251,43 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
       margin-top: 6px;
       margin-left: 5px;
     }
+	.logow{
+		position: fixed;
+		z-index: 999999;
+		top: 35%;
+		width: 100%;
+		text-align: center;
+	}
+	.logowi{
+		width: 8rem;
+		
+		
+	}
+	.wbtn {
+	  position: fixed;
+	  color: #F6F6F6;
+	  top: 60%;
+	  z-index: 9999;
+	  font-size: 14px;
+	  width: 100%;
+	  left: 0;
+	  text-align: center;
+	}
+	
+	.wbtn2 {
+	  border-bottom: 1px solid white;
+	  width: fit-content;
+	  margin: auto;
+	}
+	
+	.start {
+	  position: fixed;
+	  z-index: 2800;
+	  width: 100%;
+	  text-align: center;
+	  top: 45%;
+	  display: none;
+	}
   </style>
 </head>
 
@@ -308,6 +323,9 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
   </div>
   <div id="open">
     <div id="st"></div>
+	<div class="logow">
+		<img src="sources/logow.png" class="logowi">
+	</div>
     <div class="start" id="start">
       <img src="sources/start.png" class="si">
     </div>
@@ -374,16 +392,14 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
     $('#st').on('touchend', function () {
       window.isOpen = 1;
       $('#st').css('display', 'none');
-      $('#start,.wbtn,.door').animate({
+      $('#start,.wbtn,.door,.logow').animate({
         left: "-=1rem"
       }, 100);
-      $('#start,.wbtn,.door').delay(20).animate({
+      $('#start,.wbtn,.door,.logow').delay(20).animate({
         left: "+=25rem"
       }, 800);
       $('.lbg').delay(800).animate({
-        width: "+=70%",
-        left: "-=35%",
-        top: "-=35%",
+      
         opacity: "0"
       }, 800);
       // $('.logo').delay(1200).animate({

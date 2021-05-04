@@ -34,20 +34,22 @@
     }
 
     .music {
-      background-color: rgba(0, 0, 0, 0.7);
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+      background-color: rgba(255,255,255, 0.8);
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
       border-radius: 10px;
       width: 90%;
       margin: auto;
       margin-bottom: 15px;
-
+	  height: fit-content;
+margin-top: 3%;
     }
 
     figure {
       margin: 0 !important;
       padding: 5px;
-      color: white;
-
+      color: #333;
+     font-size: 18px;
+	 margin-bottom: 10px;
     }
 
     #mp3 {
@@ -84,7 +86,7 @@
     }
 
     .text {
-      width: 80%;
+      width: 90%;
       color: white;
       overflow-x: hidden;
       overflow-y: scroll;
@@ -105,6 +107,31 @@
       margin-top: 10px;
       color: #999;
     }
+	.playp{
+		width:3rem;
+		margin-bottom: 5%;
+		margin-left: 28%;
+		margin-right: 20px;
+		margin-top: 3%;
+	}
+	.stopb{
+		margin-top: 3%;
+		width: 3rem;
+	
+	}
+	.progress{
+		margin-bottom:10px;
+	}
+	#progress{
+		height: 10px;
+		border-radius: 100px;
+	}
+	.controls{
+		
+		height: fit-content;
+		padding-left: 20px;
+	}
+	
   </style>
 </head>
 <body>
@@ -127,13 +154,14 @@
           <code>audio</code> element.
         </audio>
         <div id="video-controls" class="controls" data-state="hidden">
-          <button id="playpause" type="button" data-state="play">Play/Pause</button>
-          <button id="stop" type="button" data-state="stop">Stop</button>
-          <div class="progress">
-            <progress id="progress" value="0" min="0">
-              <span id="progress-bar"></span>
-            </progress>
-          </div>
+         <div class="progress">
+           <progress id="progress" value="0" min="0">
+             <span id="progress-bar"></span>
+           </progress>
+         </div>
+		  <button id="playpause" type="button" data-state="play" class="playp">Play/Pause</button>
+          <button id="stop" type="button" data-state="stop" class="stopb">Stop</button>
+        
           <!-- <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
           <button id="volinc" type="button" data-state="volup">Vol+</button>
           <button id="voldec" type="button" data-state="voldown">Vol-</button>
@@ -176,7 +204,12 @@
   </script>
   <script src="./script/info.js"></script>
 	<script src="js/video-player.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#stop").css("color","yellow")
+	});
 
+</script>
 </body>
 
 </html>
