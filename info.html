@@ -137,7 +137,7 @@ margin-top: 3%;
 <body>
   <img src="sources/info.jpg" class="bg">
 
-  <img src="sources/bb.png" class="backi" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn'">
+  <img src="sources/bb.png" class="backi" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn?local=1'">
   <div class="music art">
     <div id="title" class="tt"></div>
     <img id="image" src="sources/loading.jpg" class="arti">
@@ -145,7 +145,7 @@ margin-top: 3%;
   <div class="music" id="mp3box">
     <figure>
       <div>
-        <div class="custom-control custom-switch">
+        <div class="custom-control custom-switch" style="padding-left: 56px;">
           <input type="checkbox" class="custom-control-input" id="lang">
           <label class="custom-control-label" for="lang">English</label>
         </div>
@@ -158,9 +158,10 @@ margin-top: 3%;
            <progress id="progress" value="0" min="0">
              <span id="progress-bar"></span>
            </progress>
+           <span id="progress-max" style="line-height: normal; float: right;"></span>
          </div>
-		  <button id="playpause" type="button" data-state="play" class="playp">Play/Pause</button>
-          <button id="stop" type="button" data-state="stop" class="stopb">Stop</button>
+		  <button id="playpause" type="button" data-state="play" class="playp" style="margin-left: 40%;">Play/Pause</button>
+          <!-- <button id="stop" type="button" data-state="stop" class="stopb">Stop</button> -->
         
           <!-- <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
           <button id="volinc" type="button" data-state="volup">Vol+</button>

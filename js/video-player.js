@@ -106,6 +106,12 @@ $(function () {
 				// Wait for the video's meta data to be loaded, then set the progress bar's max value to the duration of the video
 				video.addEventListener('loadedmetadata', function () {
 					progress.setAttribute('max', video.duration);
+					function formatTime(second) {
+						return [parseInt(second / 60 / 60), parseInt(second / 60) % 60, parseInt(second) % 60].join(":")
+							.replace(/\b(\d)\b/g, "0$1").replace(/00:/, "");
+					}
+					document.getElementById('progress-max').innerHTML= formatTime(video.duration)
+					console.log(video.duration);
 				});
 
 				// Changes the button state of certain button's so the correct visuals can be displayed with CSS
@@ -143,13 +149,13 @@ $(function () {
 				});
 
 				// The Media API has no 'stop()' function, so pause the video and reset its time and the progress bar
-				stop.addEventListener('click', function (e) {
-					video.pause();
-					video.currentTime = 0;
-					progress.value = 0;
-					// Update the play/pause button's 'data-state' which allows the correct button image to be set via CSS
-					changeButtonState('playpause');
-				});
+				// stop.addEventListener('click', function (e) {
+				// 	video.pause();
+				// 	video.currentTime = 0;
+				// 	progress.value = 0;
+				// 	// Update the play/pause button's 'data-state' which allows the correct button image to be set via CSS
+				// 	changeButtonState('playpause');
+				// });
 				// mute.addEventListener('click', function(e) {
 				// 	video.muted = !video.muted;
 				// 	changeButtonState('mute');
