@@ -127,11 +127,25 @@ margin-top: 3%;
 		border-radius: 100px;
 	}
 	.controls{
-		
 		height: fit-content;
 		padding-left: 20px;
 	}
-	
+	.custom-control-label.lang-label::before{
+    content: '中文';
+    width: 2.75rem;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 0 4px;
+    text-align: end;
+  }
+  .custom-control-input:checked~.lang-label::before{
+    content: 'EN';
+    text-align: start;
+  }
+  .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    -webkit-transform: translateX(1.75rem);
+    transform: translateX(1.75rem);
+  }
   </style>
 </head>
 <body>
@@ -147,7 +161,7 @@ margin-top: 3%;
       <div>
         <div class="custom-control custom-switch" style="padding-left: 56px;">
           <input type="checkbox" class="custom-control-input" id="lang">
-          <label class="custom-control-label" for="lang">English</label>
+          <label class="custom-control-label lang-label" for="lang"></label>
         </div>
         <audio id="mp3" controls src="loading.mp3">
           Your browser does not support the
