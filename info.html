@@ -12,6 +12,7 @@
   <script type="text/javascript" src="dist/watch3D.min.js"></script>
 	<link rel="stylesheet" href="css/audio.css" />
   <title>K11艺术空间</title>
+  
   <style>
     .back {
       position: absolute;
@@ -33,7 +34,10 @@
       z-index: -1;
     }
 
-    .music {
+
+
+    .musicb {
+      
       background-color: rgba(255,255,255, 0.8);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
       border-radius: 10px;
@@ -83,6 +87,7 @@ margin-top: 3%;
       color: black;
       font-weight: bolder;
       margin-bottom: 10px;
+	  margin-top: 10px;
     }
 
     .text {
@@ -108,11 +113,7 @@ margin-top: 3%;
       color: #999;
     }
 	.playp{
-		width:3rem;
-		margin-bottom: 5%;
-		margin-left: 28%;
-		margin-right: 20px;
-		margin-top: 3%;
+		width:2.3rem;
 	}
 	.stopb{
 		margin-top: 3%;
@@ -126,33 +127,63 @@ margin-top: 3%;
 		height: 10px;
 		border-radius: 100px;
 	}
+	.music {
+	  position:fixed;
+	  width: fit-content;
+	  height:20rem;
+	top:0.5rem;
+	right:6.2rem;
+	}
 	.controls{
 		height: fit-content;
-		padding-left: 20px;
+	/* 	background-color: gold; */
+		width: fit-content;
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
 	}
 	.custom-control-label.lang-label::before{
     content: '中文';
-    width: 2.75rem;
-    font-size: 12px;
-    line-height: 12px;
-    padding: 0 4px;
+    width: 5rem;
+    font-size: 16px;
+    line-height: 34px;
+    padding: 0 10px;
     text-align: end;
+	height: 34px;
+	border-radius: 500px;
+	font-weight: bold;
+	border: none;
   }
+
   .custom-control-input:checked~.lang-label::before{
-    content: 'EN';
+    content: 'ENG';
     text-align: start;
   }
   .custom-switch .custom-control-input:checked~.custom-control-label::after {
-    -webkit-transform: translateX(1.75rem);
-    transform: translateX(1.75rem);
+    -webkit-transform: translateX(45px);
+    transform: translateX(45px);
+	
   }
+  .custom-switch .custom-control-label::after{
+  	  width: 26px;
+	  height: 26px;
+	  border-radius: 500px;
+	  top:8px;
+	  margin-left: 2px;
+  }
+  .custom-control-input:checked~.custom-control-label::before{
+	 background-color: #94853b;
+	 border: none;
+	  line-height: 34px;
+  }
+
   </style>
 </head>
 <body>
   <img src="sources/info.jpg" class="bg">
 
   <img src="sources/bb.png" class="backi" style="margin: 5% 0 0 5%" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn?local=1'">
-  <div class="music art">
+  <div class="musicb art">
     <div id="title" class="tt"></div>
     <img id="image" src="sources/loading.jpg" class="arti">
   </div>
@@ -168,13 +199,13 @@ margin-top: 3%;
           <code>audio</code> element.
         </audio>
         <div id="video-controls" class="controls" data-state="hidden">
-         <div class="progress">
+         <div class="progress" style="display:none">
            <progress id="progress" value="0" min="0">
              <span id="progress-bar"></span>
            </progress>
            <span id="progress-max" style="line-height: normal; float: right;">00:00</span>
          </div>
-		  <button id="playpause" type="button" data-state="play" class="playp" style="margin-left: 40%;">Play/Pause</button>
+		  <button id="playpause" type="button" data-state="play" class="playp">Play/Pause</button>
           <!-- <button id="stop" type="button" data-state="stop" class="stopb">Stop</button> -->
         
           <!-- <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
@@ -185,7 +216,7 @@ margin-top: 3%;
       </div>
     </figure>
   </div>
-  <div class="text music">
+  <div class="text musicb">
     <div class="t1">
       <p id="p1"></p>
       <p id="p2"></p>
