@@ -79,15 +79,17 @@ margin-top: 3%;
       width: 100%;
       margin: 5px 0;
       border-radius: 10px;
+	  margin-top: 15px;
     }
 
     .tt {
 
-      color: white;
+      color: white !important;
       color: black;
       font-weight: bolder;
       margin-bottom: 10px;
-	  margin-top: 10px;
+	  width: 100%;
+	  text-align: center;
     }
 
     .text {
@@ -98,7 +100,13 @@ margin-top: 3%;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.8);
     }
-
+	#content2{
+		margin-bottom: 15px;
+	}
+#p7{
+	padding-top: 15px;
+	border-top: 1px solid #777;
+}
     .t1 {
       line-height: 24px;
       font-size: 14px;
@@ -107,7 +115,7 @@ margin-top: 3%;
     .t2 {
       font-size: 14px;
       line-height: 24px;
-      border-top: 1px solid #777;
+     /* border-top: 1px solid #777; */
       padding-top: 10px;
       margin-top: 10px;
       color: #999;
@@ -128,19 +136,20 @@ margin-top: 3%;
 		border-radius: 100px;
 	}
 	.music {
-	  position:fixed;
-	  width: fit-content;
-	  height:20rem;
-	top:0.5rem;
-	right:6.2rem;
+	  position:absolute;
+	  width: 50%;
+	  height:fit-content;
+	top:5px;
+	right:-2rem;
 	}
 	.controls{
 		height: fit-content;
 	/* 	background-color: gold; */
-		width: fit-content;
-		position: fixed;
-		top: 1rem;
-		right: 1rem;
+		width: 50px;
+		top: 0.5rem;
+		left: 7.2rem;
+		position: absolute;
+		display: inline-block;
 	}
 	.custom-control-label.lang-label::before{
     content: '中文';
@@ -184,8 +193,9 @@ margin-top: 3%;
 
   <img src="sources/bb.png" class="backi" style="margin: 5% 0 0 5%" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn?local=1'">
   <div class="musicb art">
-    <div id="title" class="tt"></div>
+   
     <img id="image" src="sources/loading.jpg" class="arti">
+	
   </div>
   <div class="music" id="mp3box">
     <figure>
@@ -217,20 +227,23 @@ margin-top: 3%;
     </figure>
   </div>
   <div class="text musicb">
+	   <div id="title" class="tt"></div>
     <div class="t1">
       <p id="p1"></p>
       <p id="p2"></p>
       <p id="p3"></p>
       <p id="p4"></p>
       <p id="p5"></p>
-      <p id="p6"></p>
-      <p id="p7"></p>
-      <p id="p8"></p>
-      <p id="p9"></p>
-      <p id="p10"></p>
+     
     </div>
     <div id="content" class="t2"></div>
     <div id="content2" class="t2"></div>
+	<p id="p7"></p>
+	<p id="p6"></p>
+	
+	<p id="p8"></p>
+	<p id="p9"></p>
+	<p id="p10"></p>
     <div id="content3" class="t2"></div>
     <div id="content4" class="t2"></div>
   </div>

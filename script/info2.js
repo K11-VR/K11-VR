@@ -174,7 +174,7 @@ const data = {
     p7: "Movements",
     p8: "2014",
     p9: "8-channel video,Color sound",
-    p10: "Video No.1: 02分30秒 / Video No.2: 02分30秒 / Video No.3: 02分30秒 / Video No.4: 02分30秒 / Video No.5: 03分53秒 / Video No.6: 03分53秒 / Video No.7: 03分53秒 / Video No.8: 03分53秒,Edition 5 of 5",
+    p10: "Video No.1: 02'30" / Video No.2: 02'30" / Video No.3: 02'30" / Video No.4: 02'30" / Video No.5: 03'53" / Video No.6: 03'53" / Video No.7: 03'53" / Video No.8: 03'53",Edition 5 of 5",
     content:
       "李明把身体的各种动作看作是一种对未来的隐喻。在《运动》中，一个角色在不停变换交通工具时，也不断地在移动。此录像可被视为艺术家的潜意识反应，前进意味着积极加速并取得更大的成果，而此作在某种程度上，投射出预兆性的数位跟踪技术，显示政治在中国日常生活中的普遍性和成长历程。",
     content2:
@@ -569,7 +569,7 @@ const data = {
     content:
       " “动漫美学”艺术家姜锡铉将动画与时尚以及童年记忆相結合。《温故而知新》以有趣的动物、流行文化和时髦的标题等其标志性主题构图，凸显一层不变的城市生活中，內蕴的正面能量。作为从电视和动画片之普及性中受益的這一代年轻人，他的美学思想主要来自卡通人物的视觉风格和种种怀旧的氛围。",
     content2:
-      "南韩艺术家姜锡铉生于1980年，毕业于美国罗德岛设计学校艺术系，被誉为“动漫美学”的主要艺术家之一，且是前几位将这此术语实践于艺术创作中的领航者。观者可以经常在博物馆、美术馆以及全球时尚品牌的项目中，发现其经典的小狗角色“Loveless”和标志性的柔和色彩。",
+      "南韩艺术家姜锡铉生于1980年，毕业于美国罗德岛设计学校艺术系，被誉为"动漫美学"的主要艺术家之一，且是前几位将这此术语实践于艺术创作中的领航者。观者可以经常在博物馆、美术馆以及全球时尚品牌的项目中，发现其经典的小狗角色"Loveless"和标志性的柔和色彩。",
     content3:
       "Animamix artist Eddie Kang combines animation and fashion with his childhood memories. Future Comes From the Past features iconic themes of his including fun animals, pop culture references, and snappy titles, highlighting the positive energy in a dull city life. From the generation that benefited from the accessibility of television and cartoons, Kang's aesthetics derives largely from the visual style of cartoon characters and the nostalgic atmosphere.",
     content4:
