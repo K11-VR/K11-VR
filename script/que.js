@@ -144,7 +144,7 @@ function init() {
   `);
 }
 
-const rightText = ["回答正确"];
+const rightText = ["恭喜你，回答正确"];
 
 const wrongText = ["回答错误"];
 

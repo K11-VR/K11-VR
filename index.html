@@ -153,7 +153,7 @@
       vertical-align: middle;
     }
 
-    #play {
+    #pause {
       display: none;
     }
 
@@ -371,6 +371,9 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
 
 
   <script type="text/javascript">
+	 $(document).ready(function(){
+	 w3d.pause();
+	 });
     $(function () {
       if (window.isOpen === 1 || new URL(location).searchParams.get("local") === '1') {
         $('#open').remove()
