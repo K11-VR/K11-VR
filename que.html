@@ -223,23 +223,28 @@
     flex-direction: column;
     width: 100%;
     padding-bottom: 1rem;
+    text-align: center;
   }
 
   .a1 {
     font-size: 0.8rem;
-    display: inline-block;
+    text-align: left;
     flex-wrap: nowrap;
-    background-color: white;
-    border: 1px solid ghostwhite;
+    border: 1px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 0 (0, 0, 0, 0);
+    margin: 5px auto;
     width: 30%;
-    color: black;
+    color: white;
+    padding: 10px;
   }
 
   .a1i {
     width: 100%;
+    display: none;
   }
 
   .as {
+    padding: 10px;
     border: 1px solid gold;
     box-shadow: 0 0 10px 0 #FFD700;
   }
@@ -249,7 +254,7 @@
     width: 100%;
     padding: 10px 0;
     z-index: 10000;
-    top: 65%;
+    top: 40%;
 
   }
 
@@ -306,68 +311,21 @@
     <div class="ass">
       <div class="a1" id="a1" data-id="A">
         <img src="" class="a1i">
-        <div>A</div>
-        <div></div>
+        <span>A:</span>
+        <span></span>
       </div>
       <div class="a1" id="a2" data-id="B">
         <img src="" class="a1i">
-        <div>B</div>
-        <div></div>
+        <span>B:</span>
+        <span></span>
       </div>
       <div class="a1" id="a3" data-id="C">
         <img src="" class="a1i">
-        <div>C</div>
-        <div></div>
+        <span>C:</span>
+        <span></span>
       </div>
     </div>
   </div>
-  <!-- 样式2 -->
-  <!-- <div class="que" class="que">
-     <div class="qt">艺术史上，艺术家夫妻并不少见，其中两位同月同日生的行为艺术家互为灵魂伴侣并携手走过了12年，在1988年的行为艺术作品《情人·长城》上分道扬镳，他们是（  ）。
-
-  </div>
-     <div class="ass">
-       <div class="a1" id="a1">
-         <img src="sources/2q.jpg" class="a1i">
-         <div>A</div>
-         <div>My Universe Serues</div>
-       </div>
-       <div class="a1" id="a2">
-         <img src="sources/3q.jpg" class="a1i">
-         <div>B</div>
-         <div>Untitled Kimpsons#2</div>
-       </div>
-       <div class="a1" id="a3">
-         <img src="sources/4q.jpg" class="a1i">
-         <div>C</div>
-         <div>Campbell's Soup Can</div>
-       </div>
-     </div>
-   </div> -->
-  <!-- 样式3 -->
-  <!--  <div class="que" class="que">
-      <div class="qt">
-		   <img src="sources/1q.jpg" class="qti">
-		  《Future comes from the past》是韩国艺术家姜錫鉉（Eddie Kang）创作的一组艺术作品，目前收藏于天津K11 select
-        5层。他的美学思想主要來自卡通人物的视觉风格和種種怀旧的氛围。<br>以下作品同属于姜錫鉉（Eddie Kang）的是?
-       
-   </div>
-      <div class="ass">
-        <div class="a1" id="a1">
-        
-          <div>A</div>
-          <div>My Universe Serues</div>
-        </div>
-        <div class="a1" id="a2">
-          <div>B</div>
-          <div>Untitled Kimpsons#2</div>
-        </div>
-        <div class="a1" id="a3">
-          <div>C</div>
-          <div>Campbell's Soup Can</div>
-        </div>
-      </div>
-    </div> -->
 
 
   <div class="sub">
@@ -377,65 +335,63 @@
   <div class="ball1">
     <img src="sources/ball1.png" class="b1i">
   </div>
-  <!-- <div class="ans anst">
+  <div class="ans anst">
     <div id="ansText" class="anst2"></div>
-  </div> -->
-  <div class="ans">
-    <img src="sources/ans.png" class="ani">
   </div>
+  <!-- <div class="ans">
+    <img src="sources/ans.png" class="ani">
+  </div> -->
   <div class="ball2">
     <img src="sources/ball2.png" class="b2i">
   </div>
 
   <script type="text/javascript" src="./script/que.js"></script>
   <script type="text/javascript">
-    $(document).ready(function () {
-
-      $('.sbtn').click(function () {
-        $('.sbtn').animate({
-          opacity: '0',
-          top: '+=2%'
-        }, 300);
-        $(".sbtn").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-          $(this).css('display', 'none');
-          next(); //这里必须加next，否则queue只会执行一次
-        });
-        $('.open').animate({
-          opacity: '0',
-          width: "+=20%",
-          left: "-=5%"
-        }, 300);
-        $(".open").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-          $(this).css('display', 'none');
-          next(); //这里必须加next，否则queue只会执行一次
-        });
-        $('.tt').animate({
-          top: '-=5%'
-        }, 300);
-        $('.tti').animate({
-          opacity: '0',
-          width: "+=10%",
-          left: "-=5%"
-        }, 300);
-        $('.bg').animate({
-          width: '+=20%',
-          height: '+=20%',
-          left: '-=10%',
-          top: '-=10%'
-        }, 1000);
-        $('.que').delay(800).animate({
-          opacity: '1'
-        }, 600);
-        $(".sub").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
-          $(this).css('display', 'block');
-          next(); //这里必须加next，否则queue只会执行一次
-        });
-        $(".sub").delay(600).animate({
-          opacity: '1'
-        }, 300);
+    function uiInit() {
+      $('.sbtn').animate({
+        opacity: '0',
+        top: '+=2%'
+      }, 300);
+      $(".sbtn").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+        $(this).css('display', 'none');
+        next(); //这里必须加next，否则queue只会执行一次
       });
+      $('.open').animate({
+        opacity: '0',
+        width: "+=20%",
+        left: "-=5%"
+      }, 300);
+      $(".open").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+        $(this).css('display', 'none');
+        next(); //这里必须加next，否则queue只会执行一次
+      });
+      $('.tt').animate({
+        top: '-=5%'
+      }, 300);
+      $('.tti').animate({
+        opacity: '0',
+        width: "+=10%",
+        left: "-=5%"
+      }, 300);
+      $('.bg').animate({
+        width: '+=20%',
+        height: '+=20%',
+        left: '-=10%',
+        top: '-=10%'
+      }, 1000);
+      $('.que').delay(800).animate({
+        opacity: '1'
+      }, 600);
+      $(".sub").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+        $(this).css('display', 'block');
+        next(); //这里必须加next，否则queue只会执行一次
+      });
+      $(".sub").delay(600).animate({
+        opacity: '1'
+      }, 300);
 
       $("#a1").click(function () {
+        console.log('a1 click')
         $("#a1").addClass("as");
         $("#a2").removeClass("as");
         $("#a3").removeClass("as");
@@ -452,6 +408,13 @@
         $("#a1").removeClass("as");
         $("#a2").removeClass("as");
       });
+      console.log('uiInit')
+    }
+    $(document).ready(function () {
+
+      $('.sbtn').click(function () {
+        uiInit();
+      });
 
       $('.sub1').click(function () {
         sub()
@@ -465,7 +428,7 @@
           opacity: '0'
         }, 300);
         $('.sub1').css('display', 'none');
-        $('.next').css('display', 'block');
+        $('.next').css('display', 'none');
         $('.ans').css('display', 'block');
         $(".ball1").delay(500).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
           $(this).css('display', 'block');
@@ -529,7 +492,10 @@
         $("#a1").removeClass("as");
         $("#a2").removeClass("as");
 
+        // setTimeout(() => {
         init();
+        uiInit();
+        // }, 1000);
       });
     });
 

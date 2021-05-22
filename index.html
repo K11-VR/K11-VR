@@ -153,7 +153,7 @@
       vertical-align: middle;
     }
 
-    #play {
+    #pause {
       display: none;
     }
 
@@ -295,11 +295,11 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
   <div class="btn" style="color:#94853c;left:15px;bottom: 8.45rem;;font-size: 16px;">楼层</div>
   <div class="btn" id="pause" onclick="pause()">
     <img src="sources/pause.png" class="btni">
-    <span class="btni">暂停</span>
+    <span class="btni">暂停演示</span>
   </div>
   <div class="btn" id="play" onclick="play()">
     <img src="sources/play.png" class="btni">
-    <span class="btni">播放</span>
+    <span class="btni">演示模式</span>
   </div>
   <div id="r1" class="r1" onclick="closed()">
     <img src="sources/r3.png" class="r1m">
@@ -367,10 +367,13 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 
   <script src="./dist/jweixin-1.0.0.js"></script>
- <script src="./script/anth.js" defer></script>
+<script src="./script/anth.js" defer></script>
 
 
   <script type="text/javascript">
+	 $(document).ready(function(){
+	 w3d.pause();
+	 });
     $(function () {
       if (window.isOpen === 1 || new URL(location).searchParams.get("local") === '1') {
         $('#open').remove()
