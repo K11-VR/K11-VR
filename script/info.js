@@ -630,7 +630,9 @@ $(function () {
   $("#image").attr("src", data[id].image);
   $("#mp3").attr("src", data[id].mp3);
   // lang change
+  var playpause = document.getElementById('playpause');
   $("#lang").change(function (e) {
+    playpause.setAttribute('data-state', 'play');
     if (e.target.checked === true) {
       $("#mp3").attr("src", data[id].mp3_en);
     } else {
