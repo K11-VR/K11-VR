@@ -367,7 +367,7 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
   <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 
   <script src="./dist/jweixin-1.0.0.js"></script>
-<script src="./script/anth.js" defer></script>
+<!-- <script src="./script/anth.js" defer></script> -->
 
 
   <script type="text/javascript">
@@ -416,10 +416,10 @@ box-shadow: 0 0 20px 5px rgba(0,0,0,0.6);
       //   left: "20px",
       //   bottom: "20px"
       // }, 500);
-      $('.btn').delay(1100).animate({
+      $('.btn').delay(1000).animate({
         opacity: '1'
       }, 500);
-      $(".lbg").delay(1600).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
+      $(".lbg").delay(1000).queue(function (next) { //queue()方法显示或操作在元素上执行的函数队列。
         $(this).css('display', 'none');
         next(); //这里必须加next，否则queue只会执行一次
       })

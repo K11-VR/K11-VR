@@ -119,9 +119,9 @@
       vertical-align: middle;
     }
 
-    #play {
-      display: none;
-    }
+  #pause {
+    display: none;
+  }
   </style>
 </head>
 
@@ -166,9 +166,9 @@
 
 
   <script type="text/javascript">
-	// window.onload = function(){
-	// 	 w3d.pause();
-	// };
+	window.onload = function(){
+		 w3d.pause();
+	};
 function pause(){
 	 w3d.pause();
 	document.getElementById("play").style.display = "block";

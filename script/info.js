@@ -120,10 +120,10 @@ const data = {
     mp3: "audio/zh/a5l1.mp3",
     mp3_en: "audio/en/a5l1.mp3",
     p1: "刘窗",
-    title: "《無題（舞伴）》",
+    title: "《无题（舞伴）》",
     p3: "2014",
     p4: "录像",
-    p5: "5分15秒,共3版，第3版 + 2件藝術家版本",
+    p5: "5分15秒,共3版，第3版 + 2件艺术家版本",
     p6: "Liu Chuang",
     p7: "Untitled (Dancing Partner)",
     p8: "2010",
@@ -247,7 +247,7 @@ const data = {
     content:
       "胡玛·芭芭的艺术语言深受科幻小说、哲学和心理学的启发。她认为人类形态有多重层次，如果突破传统美学的桎梏，更能展现个人身份的本质，而未来主义亦与身躯脆弱的本体相呼应。《无题》代表其标志性的具象绘画风格，画中的人体特征被扭曲了，表达出的情感强度却极为深刻，并与观者的情感和心理层面相互连结。",
     content2:
-      "巴基斯坦艺术家胡玛·芭芭生于1962年，现生活于纽约。她以创作由发泡胶、风干粘土和建筑废料等非传统材料组成的庞大雕塑而闻名。将原始部落神器的手工艺、德国表现主义以及科幻电影转化为创作灵感，她在作品中探讨战争、殖民主义和人性的欲望等议题。",
+      "巴基斯坦艺术家胡玛·芭芭生于1962年，现生活于纽约。她以创作由发泡胶、风干粘土和建筑废料等非传统材料组成的庞大雕塑而闻名。将原始部落神奇的手工艺、德国表现主义以及科幻电影转化为创作灵感，她在作品中探讨战争、殖民主义和人性的欲望等议题。",
     content3:
       "Huma Bhahba's artistic vocabulary is inspired by art, science fiction, philosophy and human psychology. Untitled features her signature style of figurative drawing. She believes the human form has many layers, and by going against traditional beauty leaves behind the essence of the individual identity. Her futuristic vision echoes the fragile nature of the body. The physical features in Untitled are distorted, leaving the heart and soul untouched. This is what we connect with on an emotional and psychological level.",
     content4:
@@ -270,7 +270,7 @@ const data = {
     content:
       "威尔·本尼迪克特探索用于描述诸如气候和环境等一般条件的语言和图像，如何成为实现某些政治和经济利益的工具。使用不同的媒体来创造混合的图像，他的作品经常被描述为”图中图”。 《怒吼与否》有着复杂的含义，对当代权力结构和社会控制的评论，同时不失幽默。艺术家的叙述常常暗指未来或平行的宇宙，在获得复杂政治文化内容的同时，又陷入了难以置信和荒谬的悬念中。",
     content2:
-      "美国当代艺术家威尔·本尼迪克特生于1978年的，目前定居在巴黎。他的作品展现混合信息与符号学间的交互关系，进而混淆图像本身和作品框架间的边界，并以独特进阶的技术混合摄影，绘画及素描。",
+      "美国当代艺术家威尔·本尼迪克特生于1978年，目前定居在巴黎。他的作品展现混合信息与符号学间的交互关系，进而混淆图像本身和作品框架间的边界，并以独特进阶的技术混合摄影，绘画及素描。",
     content3:
       "Will Benedict explores how the language and imagery used to describe general conditions like climate and environment have become vehicles for certain political and economic interests. Using different media to create hybrid images, his works have often been described as a picture within a picture. Rant or Not has complex implications, punctuating commentary on contemporary power structures and social control, injecting with humour. Benedict's narratives often allude to the future or a parallel universe, accessing complex political and cultural content while engaging in the suspension of disbelief and the profoundly ridiculous. ",
     content4:
@@ -523,7 +523,7 @@ const data = {
     content:
       "谢墨凛深信自己可以与人工智慧保有一种和谐的关系，而他的绘画作品正是这种共生伙伴关系的完美结果。他发明了一台三轴联动绘画机，并用其完成画作。《叠063》努力打破对人工智能的偏见，作品呈现艺术家的本质，绘画笔触的重复性不仅带有冥想特质，亦相当引人入胜。它为解读艺术家独特技法和抽象主题提供了新的途径，发掘视觉感受和内在精神的痕迹。",
     content2:
-      "谢墨凛出生于1979年，取得爱丁堡艺术学院艺术创作硕士，以用机器创作的抽象绘画文名。他视“绘画机器”为画家双手的延伸，对于“机器”的拥抱与其说是概念意义上的，不如说是来源于他对绘画形式感更精确的表达之需求。谢墨凛的机器绘画目前呈现的都是抽象的、无意义的图案。艺术家有意暂时搁置了对画面形象内容的考虑，而让图案本身强大的秩序感带来形式上的纯粹性。",
+      "谢墨凛出生于1979年，取得爱丁堡艺术学院艺术创作硕士，以用机器创作的抽象绘画闻名。他视“绘画机器”为画家双手的延伸，对于“机器”的拥抱与其说是概念意义上的，不如说是来源于他对绘画形式感更精确的表达之需求。谢墨凛的机器绘画目前呈现的都是抽象的、无意义的图案。艺术家有意暂时搁置了对画面形象内容的考虑，而让图案本身强大的秩序感带来形式上的纯粹性。",
     content3:
       "Xie Molin passionately believes in having a harmonious relationship with Artificial Intelligence, and his paintings are the happy result from this symbiotic partnership. He uses a tri-axial linkage painting machine for all of his paintings. Overlay 063 strives to break away with prejudices towards AI. This work wonderfully captures the essence of the artist and the beautiful repetition found in the paint strokes are  meditative and arresting. It illustrates a new way to interpret the artist's unique technique and abstract themes, discovering spiritual traces of external visual perception and internal humanism.",
     content4:
@@ -556,7 +556,7 @@ const data = {
     image: "sources/a2l5.jpg",
     mp3: "audio/zh/a2l5.mp3",
     mp3_en: "audio/en/a2l5.mp3",
-    p1: "姜錫鉉",
+    p1: "姜锡铉",
     title: "《温故而知新》",
     p3: "2018",
     p4: "玻璃纤维",

@@ -118,8 +118,7 @@
       font-size: 16px;
       vertical-align: middle;
     }
-
-    #play {
+ #pause {
       display: none;
     }
   </style>
@@ -165,9 +164,9 @@
 
 
   <script type="text/javascript">
-// window.onload = function(){
-// 	 w3d.pause();
-// };
+window.onload = function(){
+	 w3d.pause();
+};
 function pause(){
 	 w3d.pause();
 	document.getElementById("play").style.display = "block";
