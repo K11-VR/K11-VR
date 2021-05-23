@@ -38,8 +38,8 @@ $(function () {
       },
     });
     wx.onMenuShareAppMessage({
-      title: "来天津K11 Select", // 分享标题
-      desc: "揭秘艺术品故事",
+      title: "天津K11 select艺术典藏线上艺术空间", // 分享标题
+      desc: "即可领略天津K11 select的艺术典藏",
       link: "http://tjk11-hall.brilliantidea.cn", // 分享链接
       imgUrl: "http://tjk11-hall.brilliantidea.cn/sources/share.jpg", // 分享图标
       success: function () {
