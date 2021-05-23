@@ -28,7 +28,7 @@ if (!local) {
             }
           );
           $.post(
-            "http://tjk11-survey.brilliantidea.cn/api/v1/tjk11-hall/get-jsconfig",
+            "http://tjk11-survey.brilliantidea.cn/api/v1/wechat/9999",
             {
               url: location.href,
             },
