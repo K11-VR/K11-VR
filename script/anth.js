@@ -43,8 +43,11 @@ if (!local) {
                 nonceStr: jssdk.nonceStr,
                 signature: jssdk.signature,
                 jsApiList: [
-                  "onMenuShareTimeline", //分享给好友
-                  "onMenuShareAppMessage", //分享到朋友圈
+                  "updateAppMessageShareData",
+                  "updateTimelineShareData",
+                  "onMenuShareTimeline",
+                  "onMenuShareAppMessage",
+                  "getLocation"
                 ],
               });
             }

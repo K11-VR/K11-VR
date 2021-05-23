@@ -14,11 +14,13 @@ $(function () {
         timestamp: parseInt(jssdk.timestamp),
         nonceStr: jssdk.nonceStr,
         signature: jssdk.signature,
-        jsApiList: jssdk.jsApiList,
-        // jsApiList: [
-        //   "onMenuShareTimeline", //分享给好友
-        //   "onMenuShareAppMessage", //分享到朋友圈
-        // ],
+        jsApiList: [
+          "updateAppMessageShareData",
+          "updateTimelineShareData",
+          "onMenuShareTimeline",
+          "onMenuShareAppMessage",
+          "getLocation"
+        ],
       });
     }
   );
