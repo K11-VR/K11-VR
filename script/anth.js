@@ -5,6 +5,9 @@ const local = new URL(location).searchParams.get("local");
 
 if (!local) {
   if (openid && code && unionid) {
+
+    window._vio.push(["_setUserID", openid]);
+
     $.post(
       "http://tjk11-survey.brilliantidea.cn/api/v1/tjk11-hall/check-k11-member",
       {
