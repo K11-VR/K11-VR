@@ -16,7 +16,7 @@ if (!local) {
       function (user) {
         if (!user.data.is_member) {
           location.replace(
-            `http://test.app.klub11.com/?r=page/auth&account_id=118&_redirecturl=http://tjk11-hall.brilliantidea.cn`
+            `http://app.klub11.com/?r=page/auth&account_id=118&origin=1655&_redirecturl=http://tjk11-hall.brilliantidea.cn`
           );
         } else {
           $.post(
