@@ -119,9 +119,9 @@
       vertical-align: middle;
     }
 
-  #pause {
-    display: none;
-  }
+    #pause {
+      display: none;
+    }
   </style>
 </head>
 
@@ -166,138 +166,138 @@
 
 
   <script type="text/javascript">
-	window.onload = function(){
-		 w3d.pause();
-	};
-function pause(){
-	 w3d.pause();
-	document.getElementById("play").style.display = "block";
-	document.getElementById("pause").style.display = "none"
-}
-
-function play(){
-	 w3d.play();
-	document.getElementById("pause").style.display = "block";
-	document.getElementById("play").style.display = "none"
-}
-let layer = document.querySelector(".layer");
-
-let w3d = new watch3D({
-    wrapper : ".wrapper",
-    autoplay : true,
-    width: 5000,
-    height : 2500,
-    num : 12,
-    maxY : 0.0000000000001,
-	reverse: false,
-    tips : {
-        1 : {
-            styles : {
-              "position":"absolute",
-              "left": "-13rem",
-              "background-color" : "rgba(0,0,0,0.8)",
-              "text-align" : "center",
-              "color" : "white",
-            },
-			 content:  '<img src="sources/zoom.png"/>',
-            // content : "《Idol Behind The Curtains (Edition 6/6)》",
-            callback : function(e){
-              w3d.a5l3();
-            }
-        },
-        5 : {
-            styles : {
-            "position":"absolute",
-            "left": "-13rem",
-            "background-color" : "rgba(0,0,0,0.8)",
-            "text-align" : "center",
-            "color" : "white",
-            },
-			 content:  '<img src="sources/zoom.png"/>',
-            // content : "《Vision Quest》",
-            callback : function(e){
-               w3d.a4l3();
-            }
-        },
-		6 : {
-		    styles : {
-		   "position":"absolute",
-		   "left": "-7rem",
-		   "background-color" : "rgba(0,0,0,0.8)",
-		   "text-align" : "center",
-		   "color" : "white",
-		    },
-			 content:  '<img src="sources/zoom.png"/>',
-		    // content : "《Investigation of Sands》",
-		    callback : function(e){
-		        w3d.a3l3();
-		    }
-		},
-		9 : {
-		    styles : {
-		    "position":"absolute",
-		    "left": "-13rem",
-		    "background-color" : "rgba(0,0,0,0.8)",
-		    "text-align" : "center",
-		    "color" : "white",
-		    },
-			 content:  '<img src="sources/zoom.png"/>',
-		    // content : "《Group Photo 合3》",
-		    callback : function(e){
-		         w3d.a2l3();
-		    }
-		},
-		10 : {
-		    styles : {
-		     "position":"absolute",
-		     "left": "-7rem",
-		     "background-color" : "rgba(0,0,0,0.8)",
-		     "text-align" : "center",
-		     "color" : "white",
-		    },
-			 content:  '<img src="sources/zoom.png"/>',
-		    // content : "《A Painting of Thought III-101》",
-		    callback : function(e){
-		        w3d.a1l3();
-		    }
-		},
-		11: {
-		     styles : {
-		         "height" : "260px",
-		         "width" : "100px",
-		         "background-color" : "rgba(0,0,0,0)",
-		         "text-align" : "center",
-		         "margin-left" : "-140px",
-						 "margin-top" : "-120px",
-		         "color" : "black",
-		         "cursor" : "pointer",
-						
-						
-		     },
-		     content : "",
-		     callback : function(e){
-		         w3d.toq();
-		         // w3d.changeData({
-		         //     num : 10,
-		         //     resource : "sources/4.jpg"
-		         // },true);
-		     }
-		 },
-		
-    },
-    resource : "sources/l3.jpg",
-    loadstart : function(){
-        layer.style.display = "block";
-    },
-    loadend : function(data){
-        layer.style.display = "none";
+    window.onload = function () {
+      w3d.pause();
+    };
+    function pause() {
+      w3d.pause();
+      document.getElementById("play").style.display = "block";
+      document.getElementById("pause").style.display = "none"
     }
-});
-function closed()
-{
- document.getElementById("r1").style.display = "none";
-}
+
+    function play() {
+      w3d.play();
+      document.getElementById("pause").style.display = "block";
+      document.getElementById("play").style.display = "none"
+    }
+    let layer = document.querySelector(".layer");
+
+    let w3d = new watch3D({
+      wrapper: ".wrapper",
+      autoplay: true,
+      width: 5000,
+      height: 2500,
+      num: 12,
+      maxY: 0.0000000000001,
+      reverse: false,
+      tips: {
+        1: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+          content: '<img src="sources/zoom.png"/>',
+          // content : "《Idol Behind The Curtains (Edition 6/6)》",
+          callback: function (e) {
+            w3d.a5l3();
+          }
+        },
+        5: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+          content: '<img src="sources/zoom.png"/>',
+          // content : "《Vision Quest》",
+          callback: function (e) {
+            w3d.a4l3();
+          }
+        },
+        6: {
+          styles: {
+            "position": "absolute",
+            "left": "-7rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+          content: '<img src="sources/zoom.png"/>',
+          // content : "《Investigation of Sands》",
+          callback: function (e) {
+            w3d.a3l3();
+          }
+        },
+        9: {
+          styles: {
+            "position": "absolute",
+            "left": "-13rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+          content: '<img src="sources/zoom.png"/>',
+          // content : "《Group Photo 合3》",
+          callback: function (e) {
+            w3d.a2l3();
+          }
+        },
+        10: {
+          styles: {
+            "position": "absolute",
+            "left": "-7rem",
+            "background-color": "rgba(0,0,0,0.8)",
+            "text-align": "center",
+            "color": "white",
+          },
+          content: '<img src="sources/zoom.png"/>',
+          // content : "《A Painting of Thought III-101》",
+          callback: function (e) {
+            w3d.a1l3();
+          }
+        },
+        11: {
+          styles: {
+            "height": "260px",
+            "width": "100px",
+            "background-color": "rgba(0,0,0,0)",
+            "text-align": "center",
+            "margin-left": "-140px",
+            "margin-top": "-120px",
+            "color": "black",
+            "cursor": "pointer",
+
+
+          },
+          content: "",
+          callback: function (e) {
+            w3d.toq();
+            // w3d.changeData({
+            //     num : 10,
+            //     resource : "sources/4.jpg"
+            // },true);
+          }
+        },
+
+      },
+      resource: "sources/l3.jpg",
+      loadstart: function () {
+        layer.style.display = "block";
+      },
+      loadend: function (data) {
+        layer.style.display = "none";
+      }
+    });
+    function closed() {
+      document.getElementById("r1").style.display = "none";
+    }
   </script>
+  <script src="./script/info-auth.js"></script>
 </body>
 
 </html>
