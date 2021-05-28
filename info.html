@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta  charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    name="viewport" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script src="./js/loading.js"></script>
   <script type="text/javascript" src="dist/watch3D.min.js"></script>
-	<link rel="stylesheet" href="css/audio.css" />
+  <link rel="stylesheet" href="css/audio.css" />
   <title>K11艺术空间</title>
-  
+
   <style>
     .back {
       position: absolute;
@@ -38,23 +40,23 @@
 
 
     .musicb {
-      
-      background-color: rgba(255,255,255, 0.8);
+
+      background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
       border-radius: 10px;
       width: 90%;
       margin: auto;
       margin-bottom: 15px;
-	  height: fit-content;
-margin-top: 3%;
+      height: fit-content;
+      margin-top: 3%;
     }
 
     figure {
       margin: 0 !important;
       padding: 5px;
       color: #333;
-     font-size: 18px;
-	 margin-bottom: 10px;
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
     #mp3 {
@@ -80,7 +82,7 @@ margin-top: 3%;
       width: 100%;
       margin: 5px 0;
       border-radius: 10px;
-	  margin-top: 15px;
+      margin-top: 15px;
     }
 
     .tt {
@@ -88,18 +90,20 @@ margin-top: 3%;
       color: white !important;
       color: black;
       /* font-weight: bolder; */
-     /* margin-bottom: 10px; */
-	/* text-align: center; */
-	  display: inline-block;
+      /* margin-bottom: 10px; */
+      /* text-align: center; */
+      display: inline-block;
     }
-	.ttb{
-		text-align: center;
-		 margin-bottom: 10px;
-	}
-	#p1{
-		display: inline-block;
-		font-weight: bold;
-	}
+
+    .ttb {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #p1 {
+      display: inline-block;
+      font-weight: bold;
+    }
 
     .text {
       width: 90%;
@@ -109,14 +113,16 @@ margin-top: 3%;
       padding: 20px;
       background-color: rgba(0, 0, 0, 0.8);
     }
-	#content2{
-		margin-bottom: 15px;
-	}
-#p7{
-	padding-top: 15px;
-	border-top: 1px solid #777;
-	
-}
+
+    #content2 {
+      margin-bottom: 15px;
+    }
+
+    #p7 {
+      padding-top: 15px;
+      border-top: 1px solid #777;
+
+    }
 
     .t1 {
       line-height: 24px;
@@ -126,88 +132,99 @@ margin-top: 3%;
     .t2 {
       font-size: 14px;
       line-height: 24px;
-     /* border-top: 1px solid #777; */
+      /* border-top: 1px solid #777; */
       padding-top: 10px;
       margin-top: 10px;
       color: #999;
     }
-	.playp{
-		width:2.3rem;
-	}
-	.stopb{
-		margin-top: 3%;
-		width: 3rem;
-	
-	}
-	.progress{
-		margin-bottom:10px;
-	}
-	#progress{
-		height: 10px;
-		border-radius: 100px;
-	}
-	.music {
-	  position:absolute;
-	  width: 50%;
-	  height:fit-content;
-	top:5px;
-	right:-2rem;
-	}
-	.controls{
-		height: fit-content;
-	/* 	background-color: gold; */
-		width: 50px;
-		top: 0.5rem;
-		left: 7.2rem;
-		position: absolute;
-		display: inline-block;
-    z-index: 9999;
-	}
-	.custom-control-label.lang-label::before{
-    content: '中文';
-    width: 5rem;
-    font-size: 16px;
-    line-height: 34px;
-    padding: 0 10px;
-    text-align: end;
-	height: 34px;
-	border-radius: 500px;
-	font-weight: bold;
-	border: none;
-  }
 
-  .custom-control-input:checked~.lang-label::before{
-    content: 'ENG';
-    text-align: start;
-  }
-  .custom-switch .custom-control-input:checked~.custom-control-label::after {
-    -webkit-transform: translateX(45px);
-    transform: translateX(45px);
-	
-  }
-  .custom-switch .custom-control-label::after{
-  	  width: 26px;
-	  height: 26px;
-	  border-radius: 500px;
-	  top:8px;
-	  margin-left: 2px;
-  }
-  .custom-control-input:checked~.custom-control-label::before{
-	 background-color: #94853b;
-	 border: none;
-	  line-height: 34px;
-  }
+    .playp {
+      width: 2.3rem;
+    }
 
+    .stopb {
+      margin-top: 3%;
+      width: 3rem;
+
+    }
+
+    .progress {
+      margin-bottom: 10px;
+    }
+
+    #progress {
+      height: 10px;
+      border-radius: 100px;
+    }
+
+    .music {
+      position: absolute;
+      width: 50%;
+      height: fit-content;
+      top: 5px;
+      right: -2rem;
+    }
+
+    .controls {
+      height: fit-content;
+      /* 	background-color: gold; */
+      width: 50px;
+      top: 0.5rem;
+      left: 7.2rem;
+      position: absolute;
+      display: inline-block;
+      z-index: 9999;
+    }
+
+    .custom-control-label.lang-label::before {
+      content: '中文';
+      width: 5rem;
+      font-size: 16px;
+      line-height: 34px;
+      padding: 0 10px;
+      text-align: end;
+      height: 34px;
+      border-radius: 500px;
+      font-weight: bold;
+      border: none;
+    }
+
+    .custom-control-input:checked~.lang-label::before {
+      content: 'ENG';
+      text-align: start;
+    }
+
+    .custom-switch .custom-control-input:checked~.custom-control-label::after {
+      -webkit-transform: translateX(45px);
+      transform: translateX(45px);
+
+    }
+
+    .custom-switch .custom-control-label::after {
+      width: 26px;
+      height: 26px;
+      border-radius: 500px;
+      top: 8px;
+      margin-left: 2px;
+    }
+
+    .custom-control-input:checked~.custom-control-label::before {
+      background-color: #94853b;
+      border: none;
+      line-height: 34px;
+    }
   </style>
 </head>
+
 <body>
   <img src="sources/info.jpg" class="bg">
 
-  <img src="sources/bb.png" class="backi" style="margin: 5% 0 0 5%" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn?local=1'">
+  <!-- <img src="sources/bb.png" class="backi" style="margin: 5% 0 0 5%" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn?local=1'"> -->
+  <img src="sources/bb.png" class="backi" style="margin: 5% 0 0 5%" onclick="window.history.back()">
   <div class="musicb art">
-   
+
     <img id="image" src="sources/loading.jpg" class="arti">
-	
+
   </div>
   <div class="music" id="mp3box">
     <figure>
@@ -221,15 +238,15 @@ margin-top: 3%;
           <code>audio</code> element.
         </audio>
         <div id="video-controls" class="controls" data-state="hidden">
-         <div class="progress" style="display:none">
-           <progress id="progress" value="0" min="0">
-             <span id="progress-bar"></span>
-           </progress>
-           <span id="progress-max" style="line-height: normal; float: right;">00:00</span>
-         </div>
-		  <button id="playpause" type="button" data-state="play" class="playp">Play/Pause</button>
+          <div class="progress" style="display:none">
+            <progress id="progress" value="0" min="0">
+              <span id="progress-bar"></span>
+            </progress>
+            <span id="progress-max" style="line-height: normal; float: right;">00:00</span>
+          </div>
+          <button id="playpause" type="button" data-state="play" class="playp">Play/Pause</button>
           <!-- <button id="stop" type="button" data-state="stop" class="stopb">Stop</button> -->
-        
+
           <!-- <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
           <button id="volinc" type="button" data-state="volup">Vol+</button>
           <button id="voldec" type="button" data-state="voldown">Vol-</button>
@@ -239,27 +256,27 @@ margin-top: 3%;
     </figure>
   </div>
   <div class="text musicb">
-	  <div class="ttb">
-	  
-	<!--   <div class="tt">-</div> -->
-	   <div id="p1"></div>
-	   </div>
+    <div class="ttb">
+
+      <!--   <div class="tt">-</div> -->
+      <div id="p1"></div>
+    </div>
     <div class="t1">
-		 <div id="title" class="tt"></div>
+      <div id="title" class="tt"></div>
       <p id="p2"></p>
       <p id="p3"></p>
       <p id="p4"></p>
       <p id="p5"></p>
-     
+
     </div>
     <div id="content" class="t2"></div>
     <div id="content2" class="t2"></div>
-	<p id="p7"></p>
-	<p id="p6"></p>
-	
-	<p id="p8"></p>
-	<p id="p9"></p>
-	<p id="p10"></p>
+    <p id="p7"></p>
+    <p id="p6"></p>
+
+    <p id="p8"></p>
+    <p id="p9"></p>
+    <p id="p10"></p>
     <div id="content3" class="t2"></div>
     <div id="content4" class="t2"></div>
   </div>
@@ -278,13 +295,13 @@ margin-top: 3%;
     });
   </script>
   <script src="./script/info.js"></script>
-	<script src="js/video-player.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-	$("#stop").css("color","yellow")
-	});
+  <script src="js/video-player.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#stop").css("color", "yellow")
+    });
 
-</script>
+  </script>
 </body>
 
 </html>
