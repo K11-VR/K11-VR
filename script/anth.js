@@ -7,6 +7,8 @@ if (!local) {
   if (openid && code && unionid) {
 
     window._vio.push(["_setUserID", openid]);
+    console.log('openid')
+    console.log(openid)
 
     $.post(
       "http://tjk11-survey.brilliantidea.cn/api/v1/tjk11-hall/check-k11-member",
