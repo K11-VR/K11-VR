@@ -6,7 +6,7 @@ const local = new URL(location).searchParams.get("local");
 if (!local) {
   if (openid && code && unionid) {
 
-    window._vio.push(["_setUserID", openid]);
+    _vio.push(["_setUserID", openid]);
     console.log('openid')
     console.log(openid)
 
