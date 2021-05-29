@@ -30,6 +30,12 @@
   <title>K11艺术空间</title>
 
   <style>
+/* 	 body{
+		 
+		  width: 100vw;
+		  overflow-x: hidden;
+		 
+	  } */
     .back {
       position: absolute;
       left: 1.25rem;
@@ -226,10 +232,17 @@
       border: none;
       line-height: 34px;
     }
+	.all{
+		position: absolute;
+		width: 100vw;
+		height: fit-content;
+		overflow-x: hidden;
+	}
   </style>
 </head>
 
 <body>
+	<div class="all">
   <img src="sources/info.jpg" class="bg">
 
   <img src="sources/bb.png" class="backi" style="margin: 5% 0 0 5%" onclick="window.location.href='http://tjk11-hall.brilliantidea.cn?local=1'">
@@ -292,6 +305,7 @@
     <p id="p10"></p>
     <div id="content3" class="t2"></div>
     <div id="content4" class="t2"></div>
+  </div>
   </div>
 
   <script src="./jquery.min.js" type="text/javascript" charset="utf-8"></script>
