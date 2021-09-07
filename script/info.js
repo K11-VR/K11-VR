@@ -442,7 +442,7 @@ const data = {
     mp3: "audio/zh/a5l3.mp3",
     mp3_en: "audio/en/a5l3.mp3",
     p1: "陈维",
-    title: "《布帘后的偶像》 ",
+    title: "《布帘后的偶像》",
     p3: "2009",
     p4: "收藏级喷墨打印",
     p5: "100 × 120 厘米,共6版，第6版 ",
@@ -459,6 +459,29 @@ const data = {
       "For the artist the art of photography succeeds in bringing the past and the future together. Idol Behind the Curtains has a dream-like atmosphere. We all remember our pasts differently, filling in our memories with brighter colors and sharper images. The element of the curtains highlights Chen Wei's perception on memories; he demonstrates how human has the tendency to blur old memories and his work. His work toes the lie between experimental illusion and multiple realities of contemporary society, contrasting his dream-like photographs with mundane moments of life. ",
     content4:
       "Chinese artist born in 1980 who started with sound art and performance and later turned to video making, installation, and photography. In recent years, he has been investigating the changes in urban landscapes as well as the state of mind of city dwellers, revealing the realities and minute details that are often neglected in the city by restaging them in his works.",
+  },
+  a6l3: {
+    image: "sources/a6l3.jpg",
+    mp3: "audio/zh/a6l3.mp3",
+    mp3_en: "audio/en/a6l3.mp3",
+    p1: "刘晓辉",
+    title: "《家务练习—做饭》",
+    p3: "2015",
+    p4: "布面油画",
+    p5: "120 × 120厘米",
+    p6: "Liu Xiaohui",
+    p7: "Housework Exercise - Cooking",
+    p8: "2015",
+    p9: "Oil on canvas",
+    p10: "120 × 120 cm",
+    content:
+      "《家务练习—做饭》描绘了艺术家对日常工作和简单事务的迷恋。刘晓辉的创作以从灰色到绿色等非常有限的色调作为背景，剔除时间和地点背景等线索，捕捉了每日生活中短暂却珍贵的瞬间。他善于使用个人历史和对日常生活的观察作为叙事题材，并通过运用绘画语言和对色彩的不懈重复分析，将作画实践紧紧围绕著生活，同时肯定又否定眼前所见的经验。",
+    content2:
+      "画家刘晓辉生于1975年，毕业自中央美术学院。即使灵感来自于再平凡不过的生活事件，他在壁画方面的训练却替其绘画处理增添一种宏伟的感觉。在创作过程中，个人经历是支持着他大部分艺术创作的决定性叙述。",
+    content3:
+      "Housework Exercise Cooking depicts the artist's fascination with the mundane daily tasks and routines. His work captures fleeting moments in everyday life without the context of time and place, using a limited palette of colours ranging from grey to green as the background. He tends to use his personal history and observations of daily life as subject matter and narrative. Liu centres the structure of his practice closely around life by employing a painterly language and tireless repeating analysis of colour, the artist both affirms and denies perennially the immediate experience.",
+    content4:
+      "Chinese painter born in 1975 who graduated from the Central Academy of Fine Arts in China. Inspired by the ordinary and mundane, his training in mural painting gives his pictorial treatment a sense of grandeur. Personal history marks the defining narrative underpinning most of his artistic output.",
   },
   a1l4: {
     image: "sources/a1l4.jpg",
@@ -597,6 +620,52 @@ const data = {
       "Zhao Yao is part of a group of young Chinese artists quickly redefining the Contemporary Art movement in China. A Painting of Thought 1-465 creates a new visual language- a triangle made up of block colours shapes painted upon a tweed fabric. Previous works by the artist were inspired by Tibetan prayer flags, and the present work continues his artistic exploration on textiles. His work explores how primary structures connect to the socio-cultural reality, but also questioning the artistic ideals of authenticity and originality.",
     content4:
       "Chinese conceptual artist born in 1981 who currently lives in Beijing. He is part of an important group of emerging Chinese artists who have been redefining contemporary art in China. He works with a wide range of materials including video, painting, sculptures, and mix media.",
+  },
+  a4l5: {
+    image: "sources/a4l5.jpg",
+    mp3: "audio/zh/a4l5.mp3",
+    mp3_en: "audio/en/a4l5.mp3",
+    p1: "特雷弗·清水",
+    title: "《牛鸡鸟》",
+    p3: "2014",
+    p4: "布面油画",
+    p5: "172.72 × 167.64厘米",
+    p6: "Trevor Shimizu",
+    p7: "Cows Chickens Birds",
+    p8: "2014",
+    p9: "Oil on canvas",
+    p10: "172.72 × 167.64 cm",
+    content:
+      "清水的艺术语汇通常描绘一个特定场景，然而作品标题通常会提供与画面一样多的信息。《牛鸡鸟》揭示艺术家利用极简笔触和留白空间表现带有孩子气的画面。此作将平凡的物体简化为几个快速渲染的图像，即使展现大的创作姿态和稀疏笔触，构图美学却充满奥妙。所描绘的自然并没有把环境浪漫化，反而显得平易近人。透过对热诚与认真态度的执著，其创作给与艺术的道德化功能提供了另一种选择。",
+    content2:
+      "日裔美籍多媒体艺术家特雷弗·清水生于1978年，现居于长岛市。除了尝试装置和录像外，其绘画以热情笔触和强大能量最为人所熟知。他的灵感多半来自平庸、陈词滥调以及构成一个人生活的日常情感。",
+    content3:
+      "Shimizu's oeuvre typically illustrates a scenario, and the title often gives as much information as the rendering. Cows Chickens Birds demonstrates the artist’s minimal brushstrokes and use of empty space to convey a childlike drawing. Simplifying the ordinary objects into a few quickly rendered images, the pictorial presentation is gestural and sparse, yet subtle in its compositional aesthetics. Rather than romanticizing the environment, the nature depicted here is rather mundane. His practice offers an alternative to art's moralising function by commemorating the notion of being earnest.",
+    content4:
+      "Japanese-American multidisciplinary artist born in 1978 who currently lives in Long Island City. Also experimenting with installations and video, his paintings are the most celebrated for passionate brushstrokes and high energy. He is inspired by the banal, the cliché, as well as the everyday emotions that make up a person’s life.",
+  },
+  a5l5: {
+    image: "sources/a5l5.jpg",
+    mp3: "audio/zh/a5l5.mp3",
+    mp3_en: "audio/en/a5l5.mp3",
+    p1: "刘晓辉",
+    title: "《无题—高原练习场 No.1》",
+    p3: "2014-2016",
+    p4: "布面油画",
+    p5: "180 × 160厘米",
+    p6: "Liu Xiaohui",
+    p7: "Untitled - Highland Practice Court 1",
+    p8: "2014-2016",
+    p9: "Oil on canvas",
+    p10: "180 × 160 cm",
+    content:
+      "《无题—高原练习场 No.1》可谓是艺术家最重要的作品之一。透过不断地提炼非指涉性的题材和普通场景，刘晓辉给予作品一种特殊的文学气息。他既不完全是现实主义者，亦不是表现主义画家，将蛋彩画的运用与图形设计毫不费力地结合在一起，从而传达出温和的文学感。其作品通过质与量的渗透效应，从东方的美学角度对真理进行了准确的阐释。",
+    content2:
+      "画家刘晓辉生于1975年，毕业自中央美术学院。即使灵感来自于再平凡不过的生活事件，他在壁画方面的训练却替其绘画处理增添一种宏伟的感觉。在创作过程中，个人经历是支持着他大部分艺术创作的决定性叙述。",
+    content3:
+      "Untitled - Highland Practice Court 1 constitutes as one of the most significant works by the artist. Liu's work carries touches of literary; he constantly refines non-referring subject matters and ordinary scenes. Not being entirely a realist nor an expressionist, Liu combines the use of tempera with graphic design in an unadorned way, and thus conveys through his works a sense of literature with mild touches.  His oeuvre is an accumulation of such an accurate expression of truth from an Eastern point of view via permeating effect of quality and quantity.",
+    content4:
+      "Chinese painter born in 1975 who graduated from the Central Academy of Fine Arts in China. Inspired by the ordinary and mundane, his training in mural painting gives his pictorial treatment a sense of grandeur. Personal history marks the defining narrative underpinning most of his artistic output.",
   },
 };
 
