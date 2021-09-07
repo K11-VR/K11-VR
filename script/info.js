@@ -626,29 +626,6 @@ const data = {
     mp3: "audio/zh/a4l5.mp3",
     mp3_en: "audio/en/a4l5.mp3",
     p1: "特雷弗·清水",
-    title: "《牛鸡鸟》",
-    p3: "2014",
-    p4: "布面油画",
-    p5: "172.72 × 167.64厘米",
-    p6: "Trevor Shimizu",
-    p7: "Cows Chickens Birds",
-    p8: "2014",
-    p9: "Oil on canvas",
-    p10: "172.72 × 167.64 cm",
-    content:
-      "清水的艺术语汇通常描绘一个特定场景，然而作品标题通常会提供与画面一样多的信息。《牛鸡鸟》揭示艺术家利用极简笔触和留白空间表现带有孩子气的画面。此作将平凡的物体简化为几个快速渲染的图像，即使展现大的创作姿态和稀疏笔触，构图美学却充满奥妙。所描绘的自然并没有把环境浪漫化，反而显得平易近人。透过对热诚与认真态度的执著，其创作给与艺术的道德化功能提供了另一种选择。",
-    content2:
-      "日裔美籍多媒体艺术家特雷弗·清水生于1978年，现居于长岛市。除了尝试装置和录像外，其绘画以热情笔触和强大能量最为人所熟知。他的灵感多半来自平庸、陈词滥调以及构成一个人生活的日常情感。",
-    content3:
-      "Shimizu's oeuvre typically illustrates a scenario, and the title often gives as much information as the rendering. Cows Chickens Birds demonstrates the artist’s minimal brushstrokes and use of empty space to convey a childlike drawing. Simplifying the ordinary objects into a few quickly rendered images, the pictorial presentation is gestural and sparse, yet subtle in its compositional aesthetics. Rather than romanticizing the environment, the nature depicted here is rather mundane. His practice offers an alternative to art's moralising function by commemorating the notion of being earnest.",
-    content4:
-      "Japanese-American multidisciplinary artist born in 1978 who currently lives in Long Island City. Also experimenting with installations and video, his paintings are the most celebrated for passionate brushstrokes and high energy. He is inspired by the banal, the cliché, as well as the everyday emotions that make up a person’s life.",
-  },
-  a5l5: {
-    image: "sources/a5l5.jpg",
-    mp3: "audio/zh/a5l5.mp3",
-    mp3_en: "audio/en/a5l5.mp3",
-    p1: "刘晓辉",
     title: "《无题—高原练习场 No.1》",
     p3: "2014-2016",
     p4: "布面油画",
@@ -666,6 +643,29 @@ const data = {
       "Untitled - Highland Practice Court 1 constitutes as one of the most significant works by the artist. Liu's work carries touches of literary; he constantly refines non-referring subject matters and ordinary scenes. Not being entirely a realist nor an expressionist, Liu combines the use of tempera with graphic design in an unadorned way, and thus conveys through his works a sense of literature with mild touches.  His oeuvre is an accumulation of such an accurate expression of truth from an Eastern point of view via permeating effect of quality and quantity.",
     content4:
       "Chinese painter born in 1975 who graduated from the Central Academy of Fine Arts in China. Inspired by the ordinary and mundane, his training in mural painting gives his pictorial treatment a sense of grandeur. Personal history marks the defining narrative underpinning most of his artistic output.",
+  },
+  a5l5: {
+    image: "sources/a5l5.jpg",
+    mp3: "audio/zh/a5l5.mp3",
+    mp3_en: "audio/en/a5l5.mp3",
+    p1: "特雷弗·清水",
+    title: "《牛鸡鸟》",
+    p3: "2014",
+    p4: "布面油画",
+    p5: "172.72 × 167.64厘米",
+    p6: "Trevor Shimizu",
+    p7: "Cows Chickens Birds",
+    p8: "2014",
+    p9: "Oil on canvas",
+    p10: "172.72 × 167.64 cm",
+    content:
+      "清水的艺术语汇通常描绘一个特定场景，然而作品标题通常会提供与画面一样多的信息。《牛鸡鸟》揭示艺术家利用极简笔触和留白空间表现带有孩子气的画面。此作将平凡的物体简化为几个快速渲染的图像，即使展现大的创作姿态和稀疏笔触，构图美学却充满奥妙。所描绘的自然并没有把环境浪漫化，反而显得平易近人。透过对热诚与认真态度的执著，其创作给与艺术的道德化功能提供了另一种选择。",
+    content2:
+      "日裔美籍多媒体艺术家特雷弗·清水生于1978年，现居于长岛市。除了尝试装置和录像外，其绘画以热情笔触和强大能量最为人所熟知。他的灵感多半来自平庸、陈词滥调以及构成一个人生活的日常情感。",
+    content3:
+      "Shimizu's oeuvre typically illustrates a scenario, and the title often gives as much information as the rendering. Cows Chickens Birds demonstrates the artist’s minimal brushstrokes and use of empty space to convey a childlike drawing. Simplifying the ordinary objects into a few quickly rendered images, the pictorial presentation is gestural and sparse, yet subtle in its compositional aesthetics. Rather than romanticizing the environment, the nature depicted here is rather mundane. His practice offers an alternative to art's moralising function by commemorating the notion of being earnest.",
+    content4:
+      "Japanese-American multidisciplinary artist born in 1978 who currently lives in Long Island City. Also experimenting with installations and video, his paintings are the most celebrated for passionate brushstrokes and high energy. He is inspired by the banal, the cliché, as well as the everyday emotions that make up a person’s life.",
   },
 };
 
